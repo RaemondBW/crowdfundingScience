@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 960px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([0, 0], 2);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var circle_1 = L.circle([36.6002378, -121.8946761], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_1.bindPopup("Location: Monterey, CA; The Success Rate: 0.5");
+map.addLayer(circle_1)
+
+var circle_2 = L.circle([33.4151843, -111.8314724], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_2.bindPopup("Location: Mesa, AZ; The Success Rate: 0.285714285714");
+map.addLayer(circle_2)
+
+var circle_3 = L.circle([48.7595529, -122.4882249], 57142.8571429, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_3.bindPopup("Location: Bellingham, WA; The Success Rate: 0.571428571429");
+map.addLayer(circle_3)
+
+var circle_4 = L.circle([39.768403, -86.158068], 34615.3846154, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_4.bindPopup("Location: Indianapolis, IN; The Success Rate: 0.346153846154");
+map.addLayer(circle_4)
+
+var circle_5 = L.circle([41.7637111, -72.6850932], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_5.bindPopup("Location: Hartford, CT; The Success Rate: 0.333333333333");
+map.addLayer(circle_5)
+
+var circle_6 = L.circle([44.9537029, -93.0899578], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_6.bindPopup("Location: St. Paul, MN; The Success Rate: 0.5");
+map.addLayer(circle_6)
+
+var circle_7 = L.circle([35.6869752, -105.937799], 100000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_7.bindPopup("Location: Santa Fe, NM; The Success Rate: 1.0");
+map.addLayer(circle_7)
+
+var circle_8 = L.circle([38.9517053, -92.3340724], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_8.bindPopup("Location: Columbia, MO; The Success Rate: 0.285714285714");
+map.addLayer(circle_8)
+
+var circle_9 = L.circle([37.8715926, -122.272747], 61111.1111111, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_9.bindPopup("Location: Berkeley, CA; The Success Rate: 0.611111111111");
+map.addLayer(circle_9)
+
+var circle_10 = L.circle([41.8781136, -87.6297982], 58433.7349398, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_10.bindPopup("Location: Chicago, IL; The Success Rate: 0.584337349398");
+map.addLayer(circle_10)
+
+var circle_11 = L.circle([39.165325, -86.5263857], 66666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_11.bindPopup("Location: Bloomington, IN; The Success Rate: 0.666666666667");
+map.addLayer(circle_11)
+
+var circle_12 = L.circle([27.950575, -82.4571776], 65000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_12.bindPopup("Location: Tampa, FL; The Success Rate: 0.65");
+map.addLayer(circle_12)
+
+var circle_13 = L.circle([42.0450722, -87.6876969], 87500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_13.bindPopup("Location: Evanston, IL; The Success Rate: 0.875");
+map.addLayer(circle_13)
+
+var circle_14 = L.circle([29.7601927, -95.3693896], 44444.4444444, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_14.bindPopup("Location: Houston, TX; The Success Rate: 0.444444444444");
+map.addLayer(circle_14)
+
+var circle_15 = L.circle([30.267153, -97.7430608], 64948.4536082, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_15.bindPopup("Location: Austin, TX; The Success Rate: 0.649484536082");
+map.addLayer(circle_15)
+
+var circle_16 = L.circle([21.3069444, -157.8583333], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_16.bindPopup("Location: Honolulu, HI; The Success Rate: 0.5");
+map.addLayer(circle_16)
+
+var circle_17 = L.circle([42.1945758, -122.7094767], 42857.1428571, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_17.bindPopup("Location: Ashland, OR; The Success Rate: 0.428571428571");
+map.addLayer(circle_17)
+
+var circle_18 = L.circle([33.2148412, -97.1330683], 100000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_18.bindPopup("Location: Denton, TX; The Success Rate: 1.0");
+map.addLayer(circle_18)
+
+var circle_19 = L.circle([42.8864468, -78.8783689], 44444.4444444, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_19.bindPopup("Location: Buffalo, NY; The Success Rate: 0.444444444444");
+map.addLayer(circle_19)
+
+var circle_20 = L.circle([39.737567, -104.9847179], 41558.4415584, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_20.bindPopup("Location: Denver, CO; The Success Rate: 0.415584415584");
+map.addLayer(circle_20)
+
+var circle_21 = L.circle([32.7765656, -79.9309216], 88888.8888889, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_21.bindPopup("Location: Charleston, SC; The Success Rate: 0.888888888889");
+map.addLayer(circle_21)
+
+var circle_22 = L.circle([43.16103, -77.6109219], 54545.4545455, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_22.bindPopup("Location: Rochester, NY; The Success Rate: 0.545454545455");
+map.addLayer(circle_22)
+
+var circle_23 = L.circle([39.5296329, -119.8138027], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_23.bindPopup("Location: Reno, NV; The Success Rate: 0.285714285714");
+map.addLayer(circle_23)
+
+var circle_24 = L.circle([38.5815719, -121.4943996], 28000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_24.bindPopup("Location: Sacramento, CA; The Success Rate: 0.28");
+map.addLayer(circle_24)
+
+var circle_25 = L.circle([37.2089572, -93.2922989], 40000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_25.bindPopup("Location: Springfield, MO; The Success Rate: 0.4");
+map.addLayer(circle_25)
+
+var circle_26 = L.circle([25.7889689, -80.2264393], 24444.4444444, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_26.bindPopup("Location: Miami, FL; The Success Rate: 0.244444444444");
+map.addLayer(circle_26)
+
+var circle_27 = L.circle([43.0389025, -87.9064736], 46153.8461538, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_27.bindPopup("Location: Milwaukee, WI; The Success Rate: 0.461538461538");
+map.addLayer(circle_27)
+
+var circle_28 = L.circle([44.7630567, -85.6206317], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_28.bindPopup("Location: Traverse City, MI; The Success Rate: 0.333333333333");
+map.addLayer(circle_28)
+
+var circle_29 = L.circle([35.9940329, -78.898619], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_29.bindPopup("Location: Durham, NC; The Success Rate: 0.333333333333");
+map.addLayer(circle_29)
+
+var circle_30 = L.circle([32.7153292, -117.1572551], 55681.8181818, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_30.bindPopup("Location: San Diego, CA; The Success Rate: 0.556818181818");
+map.addLayer(circle_30)
+
+var circle_31 = L.circle([40.2338438, -111.6585337], 47619.047619, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_31.bindPopup("Location: Provo, UT; The Success Rate: 0.47619047619");
+map.addLayer(circle_31)
+
+var circle_32 = L.circle([41.8239891, -71.4128343], 78947.3684211, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_32.bindPopup("Location: Providence, RI; The Success Rate: 0.789473684211");
+map.addLayer(circle_32)
+
+var circle_33 = L.circle([38.0405837, -84.5037164], 41666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_33.bindPopup("Location: Lexington, KY; The Success Rate: 0.416666666667");
+map.addLayer(circle_33)
+
+var circle_34 = L.circle([47.6587802, -117.4260466], 54545.4545455, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_34.bindPopup("Location: Spokane, WA; The Success Rate: 0.545454545455");
+map.addLayer(circle_34)
+
+var circle_35 = L.circle([29.6516344, -82.3248262], 14285.7142857, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_35.bindPopup("Location: Gainesville, FL; The Success Rate: 0.142857142857");
+map.addLayer(circle_35)
+
+var circle_36 = L.circle([47.6739881, -122.121512], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_36.bindPopup("Location: Redmond, WA; The Success Rate: 0.5");
+map.addLayer(circle_36)
+
+var circle_37 = L.circle([42.732535, -84.5555347], 57142.8571429, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_37.bindPopup("Location: Lansing, MI; The Success Rate: 0.571428571429");
+map.addLayer(circle_37)
+
+var circle_38 = L.circle([35.1982836, -111.651302], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_38.bindPopup("Location: Flagstaff, AZ; The Success Rate: 0.333333333333");
+map.addLayer(circle_38)
+
+var circle_39 = L.circle([35.7795897, -78.6381787], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_39.bindPopup("Location: Raleigh, NC; The Success Rate: 0.625");
+map.addLayer(circle_39)
+
+var circle_40 = L.circle([37.8043637, -122.2711137], 65714.2857143, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_40.bindPopup("Location: Oakland, CA; The Success Rate: 0.657142857143");
+map.addLayer(circle_40)
+
+var circle_41 = L.circle([34.8526176, -82.3940104], 55555.5555556, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_41.bindPopup("Location: Greenville, SC; The Success Rate: 0.555555555556");
+map.addLayer(circle_41)
+
+var circle_42 = L.circle([36.0625795, -94.1574263], 16666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_42.bindPopup("Location: Fayetteville, AR; The Success Rate: 0.166666666667");
+map.addLayer(circle_42)
+
+var circle_43 = L.circle([39.0997265, -94.5785667], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_43.bindPopup("Location: Kansas City, MO; The Success Rate: 0.5");
+map.addLayer(circle_43)
+
+var circle_44 = L.circle([41.6611277, -91.5301683], 42857.1428571, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_44.bindPopup("Location: Iowa City, IA; The Success Rate: 0.428571428571");
+map.addLayer(circle_44)
+
+var circle_45 = L.circle([47.0378741, -122.9006951], 66666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_45.bindPopup("Location: Olympia, WA; The Success Rate: 0.666666666667");
+map.addLayer(circle_45)
+
+var circle_46 = L.circle([41.6639383, -83.555212], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_46.bindPopup("Location: Toledo, OH; The Success Rate: 0.625");
+map.addLayer(circle_46)
+
+var circle_47 = L.circle([34.1808392, -118.3089661], 58333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_47.bindPopup("Location: Burbank, CA; The Success Rate: 0.583333333333");
+map.addLayer(circle_47)
+
+var circle_48 = L.circle([44.9428975, -123.0350963], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_48.bindPopup("Location: Salem, OR; The Success Rate: 0.285714285714");
+map.addLayer(circle_48)
+
+var circle_49 = L.circle([29.9510658, -90.0715323], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_49.bindPopup("Location: New Orleans, LA; The Success Rate: 0.5");
+map.addLayer(circle_49)
+
+var circle_50 = L.circle([39.7294319, -104.8319195], 12500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_50.bindPopup("Location: Aurora, CO; The Success Rate: 0.125");
+map.addLayer(circle_50)
+
+var circle_51 = L.circle([33.4255104, -111.9400054], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_51.bindPopup("Location: Tempe, AZ; The Success Rate: 0.333333333333");
+map.addLayer(circle_51)
+
+var circle_52 = L.circle([38.8799697, -77.1067698], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_52.bindPopup("Location: Arlington, VA; The Success Rate: 0.285714285714");
+map.addLayer(circle_52)
+
+var circle_53 = L.circle([28.5999998, -81.3392352], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_53.bindPopup("Location: Winter Park, FL; The Success Rate: 0.5");
+map.addLayer(circle_53)
+
+var circle_54 = L.circle([43.0481221, -76.1474244], 71428.5714286, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_54.bindPopup("Location: Syracuse, NY; The Success Rate: 0.714285714286");
+map.addLayer(circle_54)
+
+var circle_55 = L.circle([32.0835407, -81.0998342], 63636.3636364, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_55.bindPopup("Location: Savannah, GA; The Success Rate: 0.636363636364");
+map.addLayer(circle_55)
+
+var circle_56 = L.circle([41.308274, -72.9278835], 75000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_56.bindPopup("Location: New Haven, CT; The Success Rate: 0.75");
+map.addLayer(circle_56)
+
+var circle_57 = L.circle([37.3393857, -121.8949555], 41176.4705882, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_57.bindPopup("Location: San Jose, CA; The Success Rate: 0.411764705882");
+map.addLayer(circle_57)
+
+var circle_58 = L.circle([39.7589478, -84.1916069], 30769.2307692, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_58.bindPopup("Location: Dayton, OH; The Success Rate: 0.307692307692");
+map.addLayer(circle_58)
+
+var circle_59 = L.circle([41.2523634, -95.9979883], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_59.bindPopup("Location: Omaha, NE; The Success Rate: 0.5");
+map.addLayer(circle_59)
+
+var circle_60 = L.circle([35.2270869, -80.8431267], 38095.2380952, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_60.bindPopup("Location: Charlotte, NC; The Success Rate: 0.380952380952");
+map.addLayer(circle_60)
+
+var circle_61 = L.circle([39.2903848, -76.6121893], 37500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_61.bindPopup("Location: Baltimore, MD; The Success Rate: 0.375");
+map.addLayer(circle_61)
+
+var circle_62 = L.circle([36.7468422, -119.7725868], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_62.bindPopup("Location: Fresno, CA; The Success Rate: 0.333333333333");
+map.addLayer(circle_62)
+
+var circle_63 = L.circle([44.5645659, -123.2620435], 42857.1428571, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_63.bindPopup("Location: Corvallis, OR; The Success Rate: 0.428571428571");
+map.addLayer(circle_63)
+
+var circle_64 = L.circle([44.0520691, -123.0867536], 40000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_64.bindPopup("Location: Eugene, OR; The Success Rate: 0.4");
+map.addLayer(circle_64)
+
+var circle_65 = L.circle([45.487062, -122.8037102], 37500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_65.bindPopup("Location: Beaverton, OR; The Success Rate: 0.375");
+map.addLayer(circle_65)
+
+var circle_66 = L.circle([43.6187102, -116.2146068], 55555.5555556, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_66.bindPopup("Location: Boise, ID; The Success Rate: 0.555555555556");
+map.addLayer(circle_66)
+
+var circle_67 = L.circle([42.3584308, -71.0597732], 75862.0689655, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_67.bindPopup("Location: Boston, MA; The Success Rate: 0.758620689655");
+map.addLayer(circle_67)
+
+var circle_68 = L.circle([34.274646, -119.2290316], 66666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_68.bindPopup("Location: Ventura, CA; The Success Rate: 0.666666666667");
+map.addLayer(circle_68)
+
+var circle_69 = L.circle([40.65, -73.95], 70322.5806452, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_69.bindPopup("Location: Brooklyn, NY; The Success Rate: 0.703225806452");
+map.addLayer(circle_69)
+
+var circle_70 = L.circle([32.7554883, -97.3307658], 25000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_70.bindPopup("Location: Fort Worth, TX; The Success Rate: 0.25");
+map.addLayer(circle_70)
+
+var circle_71 = L.circle([42.4439614, -76.5018807], 61538.4615385, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_71.bindPopup("Location: Ithaca, NY; The Success Rate: 0.615384615385");
+map.addLayer(circle_71)
+
+var circle_72 = L.circle([40.7891424, -73.1349605], 30000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_72.bindPopup("Location: Long Island, NY; The Success Rate: 0.3");
+map.addLayer(circle_72)
+
+var circle_73 = L.circle([42.2808256, -83.7430378], 100000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_73.bindPopup("Location: Ann Arbor, MI; The Success Rate: 1.0");
+map.addLayer(circle_73)
+
+var circle_74 = L.circle([41.4994954, -81.6954088], 47368.4210526, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_74.bindPopup("Location: Cleveland, OH; The Success Rate: 0.473684210526");
+map.addLayer(circle_74)
+
+var circle_75 = L.circle([33.5778631, -101.8551665], 16666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_75.bindPopup("Location: Lubbock, TX; The Success Rate: 0.166666666667");
+map.addLayer(circle_75)
+
+var circle_76 = L.circle([42.3736158, -71.1097335], 85714.2857143, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_76.bindPopup("Location: Cambridge, MA; The Success Rate: 0.857142857143");
+map.addLayer(circle_76)
+
+var circle_77 = L.circle([44.0581728, -121.3153096], 14285.7142857, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_77.bindPopup("Location: Bend, OR; The Success Rate: 0.142857142857");
+map.addLayer(circle_77)
+
+var circle_78 = L.circle([27.7730556, -82.64], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_78.bindPopup("Location: St. Petersburg, FL; The Success Rate: 0.285714285714");
+map.addLayer(circle_78)
+
+var circle_79 = L.circle([26.1224386, -80.1373174], 6250.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_79.bindPopup("Location: Fort Lauderdale, FL; The Success Rate: 0.0625");
+map.addLayer(circle_79)
+
+var circle_80 = L.circle([29.4241219, -98.4936282], 43478.2608696, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_80.bindPopup("Location: San Antonio, TX; The Success Rate: 0.434782608696");
+map.addLayer(circle_80)
+
+var circle_81 = L.circle([34.1477849, -118.1445155], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_81.bindPopup("Location: Pasadena, CA; The Success Rate: 0.625");
+map.addLayer(circle_81)
+
+var circle_82 = L.circle([36.8529263, -75.977985], 44444.4444444, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_82.bindPopup("Location: Virginia Beach, VA; The Success Rate: 0.444444444444");
+map.addLayer(circle_82)
+
+var circle_83 = L.circle([37.7749295, -122.4194155], 64393.9393939, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_83.bindPopup("Location: San Francisco, CA; The Success Rate: 0.643939393939");
+map.addLayer(circle_83)
+
+var circle_84 = L.circle([39.952335, -75.163789], 47142.8571429, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_84.bindPopup("Location: Philadelphia, PA; The Success Rate: 0.471428571429");
+map.addLayer(circle_84)
+
+var circle_85 = L.circle([38.2526647, -85.7584557], 47058.8235294, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_85.bindPopup("Location: Louisville, KY; The Success Rate: 0.470588235294");
+map.addLayer(circle_85)
+
+var circle_86 = L.circle([39.1031182, -84.5120196], 64285.7142857, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_86.bindPopup("Location: Cincinnati, OH; The Success Rate: 0.642857142857");
+map.addLayer(circle_86)
+
+var circle_87 = L.circle([34.1425078, -118.255075], 55555.5555556, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_87.bindPopup("Location: Glendale, CA; The Success Rate: 0.555555555556");
+map.addLayer(circle_87)
+
+var circle_88 = L.circle([38.6270025, -90.1994042], 60714.2857143, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_88.bindPopup("Location: St. Louis, MO; The Success Rate: 0.607142857143");
+map.addLayer(circle_88)
+
+var circle_89 = L.circle([34.0522342, -118.2436849], 52688.172043, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_89.bindPopup("Location: Los Angeles, CA; The Success Rate: 0.52688172043");
+map.addLayer(circle_89)
+
+var circle_90 = L.circle([30.3321838, -81.655651], 29411.7647059, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_90.bindPopup("Location: Jacksonville, FL; The Success Rate: 0.294117647059");
+map.addLayer(circle_90)
+
+var circle_91 = L.circle([36.1539816, -95.992775], 35714.2857143, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_91.bindPopup("Location: Tulsa, OK; The Success Rate: 0.357142857143");
+map.addLayer(circle_91)
+
+var circle_92 = L.circle([47.610377, -122.2006786], 42857.1428571, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_92.bindPopup("Location: Bellevue, WA; The Success Rate: 0.428571428571");
+map.addLayer(circle_92)
+
+var circle_93 = L.circle([40.0378755, -76.3055144], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_93.bindPopup("Location: Lancaster, PA; The Success Rate: 0.333333333333");
+map.addLayer(circle_93)
+
+var circle_94 = L.circle([41.079273, -85.1393513], 25000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_94.bindPopup("Location: Fort Wayne, IN; The Success Rate: 0.25");
+map.addLayer(circle_94)
+
+var circle_95 = L.circle([35.4675602, -97.5164276], 27272.7272727, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_95.bindPopup("Location: Oklahoma City, OK; The Success Rate: 0.272727272727");
+map.addLayer(circle_95)
+
+var circle_96 = L.circle([40.4406248, -79.9958864], 55172.4137931, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_96.bindPopup("Location: Pittsburgh, PA; The Success Rate: 0.551724137931");
+map.addLayer(circle_96)
+
+var circle_97 = L.circle([37.3860517, -122.0838511], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_97.bindPopup("Location: Mountain View, CA; The Success Rate: 0.5");
+map.addLayer(circle_97)
+
+var circle_98 = L.circle([40.0149856, -105.2705456], 45833.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_98.bindPopup("Location: Boulder, CO; The Success Rate: 0.458333333333");
+map.addLayer(circle_98)
+
+var circle_99 = L.circle([33.4483771, -112.0740373], 40909.0909091, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_99.bindPopup("Location: Phoenix, AZ; The Success Rate: 0.409090909091");
+map.addLayer(circle_99)
+
+var circle_100 = L.circle([44.983334, -93.26667], 52054.7945205, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_100.bindPopup("Location: Minneapolis, MN; The Success Rate: 0.520547945205");
+map.addLayer(circle_100)
+
+var circle_101 = L.circle([61.2180556, -149.9002778], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_101.bindPopup("Location: Anchorage, AK; The Success Rate: 0.5");
+map.addLayer(circle_101)
+
+var circle_102 = L.circle([36.0726354, -79.7919754], 42857.1428571, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_102.bindPopup("Location: Greensboro, NC; The Success Rate: 0.428571428571");
+map.addLayer(circle_102)
+
+var circle_103 = L.circle([40.8447819, -73.8648268], 26666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_103.bindPopup("Location: Bronx, NY; The Success Rate: 0.266666666667");
+map.addLayer(circle_103)
+
+var circle_104 = L.circle([45.6387281, -122.6614861], 20000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_104.bindPopup("Location: Vancouver, WA; The Success Rate: 0.2");
+map.addLayer(circle_104)
+
+var circle_105 = L.circle([35.0456297, -85.3096801], 83333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_105.bindPopup("Location: Chattanooga, TN; The Success Rate: 0.833333333333");
+map.addLayer(circle_105)
+
+var circle_106 = L.circle([34.4208305, -119.6981901], 53846.1538462, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_106.bindPopup("Location: Santa Barbara, CA; The Success Rate: 0.538461538462");
+map.addLayer(circle_106)
+
+var circle_107 = L.circle([36.9741171, -122.0307963], 41666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_107.bindPopup("Location: Santa Cruz, CA; The Success Rate: 0.416666666667");
+map.addLayer(circle_107)
+
+var circle_108 = L.circle([35.9606384, -83.9207392], 41666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_108.bindPopup("Location: Knoxville, TN; The Success Rate: 0.416666666667");
+map.addLayer(circle_108)
+
+var circle_109 = L.circle([36.1666667, -86.7833333], 60416.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_109.bindPopup("Location: Nashville, TN; The Success Rate: 0.604166666667");
+map.addLayer(circle_109)
+
+var circle_110 = L.circle([38.8338816, -104.8213634], 46666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_110.bindPopup("Location: Colorado Springs, CO; The Success Rate: 0.466666666667");
+map.addLayer(circle_110)
+
+var circle_111 = L.circle([47.6062095, -122.3320708], 63636.3636364, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_111.bindPopup("Location: Seattle, WA; The Success Rate: 0.636363636364");
+map.addLayer(circle_111)
+
+var circle_112 = L.circle([33.7700504, -118.1937395], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_112.bindPopup("Location: Long Beach, CA; The Success Rate: 0.625");
+map.addLayer(circle_112)
+
+var circle_113 = L.circle([33.7877944, -117.8531119], 85714.2857143, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_113.bindPopup("Location: Orange, CA; The Success Rate: 0.857142857143");
+map.addLayer(circle_113)
+
+var circle_114 = L.circle([43.0730517, -89.4012302], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_114.bindPopup("Location: Madison, WI; The Success Rate: 0.5");
+map.addLayer(circle_114)
+
+var circle_115 = L.circle([37.5407246, -77.4360481], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_115.bindPopup("Location: Richmond, VA; The Success Rate: 0.625");
+map.addLayer(circle_115)
+
+var circle_116 = L.circle([33.6411316, -117.9186689], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_116.bindPopup("Location: Costa Mesa, CA; The Success Rate: 0.5");
+map.addLayer(circle_116)
+
+var circle_117 = L.circle([34.0194543, -118.4911912], 60000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_117.bindPopup("Location: Santa Monica, CA; The Success Rate: 0.6");
+map.addLayer(circle_117)
+
+var circle_118 = L.circle([38.8462236, -77.3063733], 28571.4285714, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_118.bindPopup("Location: Fairfax, VA; The Success Rate: 0.285714285714");
+map.addLayer(circle_118)
+
+var circle_119 = L.circle([42.3875968, -71.0994968], 71428.5714286, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_119.bindPopup("Location: Somerville, MA; The Success Rate: 0.714285714286");
+map.addLayer(circle_119)
+
+var circle_120 = L.circle([42.6334247, -71.3161718], 83333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_120.bindPopup("Location: Lowell, MA; The Success Rate: 0.833333333333");
+map.addLayer(circle_120)
+
+var circle_121 = L.circle([40.7282239, -73.7948516], 100000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_121.bindPopup("Location: Queens, NY; The Success Rate: 1.0");
+map.addLayer(circle_121)
+
+var circle_122 = L.circle([33.9562149, -83.9879625], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_122.bindPopup("Location: Lawrenceville, GA; The Success Rate: 0.333333333333");
+map.addLayer(circle_122)
+
+var circle_123 = L.circle([30.421309, -87.2169149], 57142.8571429, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_123.bindPopup("Location: Pensacola, FL; The Success Rate: 0.571428571429");
+map.addLayer(circle_123)
+
+var circle_124 = L.circle([45.5234515, -122.6762071], 64130.4347826, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_124.bindPopup("Location: Portland, OR; The Success Rate: 0.641304347826");
+map.addLayer(circle_124)
+
+var circle_125 = L.circle([42.9633599, -85.6680863], 23076.9230769, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_125.bindPopup("Location: Grand Rapids, MI; The Success Rate: 0.230769230769");
+map.addLayer(circle_125)
+
+var circle_126 = L.circle([33.5206608, -86.80249], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_126.bindPopup("Location: Birmingham, AL; The Success Rate: 0.5");
+map.addLayer(circle_126)
+
+var circle_127 = L.circle([42.8651298, -71.3739272], 85714.2857143, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_127.bindPopup("Location: Londonderry, NH; The Success Rate: 0.857142857143");
+map.addLayer(circle_127)
+
+var circle_128 = L.circle([47.2528768, -122.4442906], 71428.5714286, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_128.bindPopup("Location: Tacoma, WA; The Success Rate: 0.714285714286");
+map.addLayer(circle_128)
+
+var circle_129 = L.circle([42.331427, -83.0457538], 38095.2380952, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_129.bindPopup("Location: Detroit, MI; The Success Rate: 0.380952380952");
+map.addLayer(circle_129)
+
+var circle_130 = L.circle([38.3031837, -77.4605399], 77777.7777778, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_130.bindPopup("Location: Fredericksburg, VA; The Success Rate: 0.777777777778");
+map.addLayer(circle_130)
+
+var circle_131 = L.circle([32.7801399, -96.8004511], 48000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_131.bindPopup("Location: Dallas, TX; The Success Rate: 0.48");
+map.addLayer(circle_131)
+
+var circle_132 = L.circle([40.7902778, -73.9597222], 35294.1176471, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_132.bindPopup("Location: Manhattan, NY; The Success Rate: 0.352941176471");
+map.addLayer(circle_132)
+
+var circle_133 = L.circle([32.2217429, -110.926479], 47826.0869565, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_133.bindPopup("Location: Tucson, AZ; The Success Rate: 0.478260869565");
+map.addLayer(circle_133)
+
+var circle_134 = L.circle([40.7607793, -111.8910474], 48837.2093023, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_134.bindPopup("Location: Salt Lake City, UT; The Success Rate: 0.488372093023");
+map.addLayer(circle_134)
+
+var circle_135 = L.circle([27.3364347, -82.5306527], 25000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_135.bindPopup("Location: Sarasota, FL; The Success Rate: 0.25");
+map.addLayer(circle_135)
+
+var circle_136 = L.circle([36.216795, -81.6745517], 100000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_136.bindPopup("Location: Boone, NC; The Success Rate: 1.0");
+map.addLayer(circle_136)
+
+var circle_137 = L.circle([28.5383355, -81.3792365], 26190.4761905, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_137.bindPopup("Location: Orlando, FL; The Success Rate: 0.261904761905");
+map.addLayer(circle_137)
+
+var circle_138 = L.circle([45.6834599, -111.050499], 55555.5555556, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_138.bindPopup("Location: Bozeman, MT; The Success Rate: 0.555555555556");
+map.addLayer(circle_138)
+
+var circle_139 = L.circle([39.9611755, -82.9987942], 27777.7777778, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_139.bindPopup("Location: Columbus, OH; The Success Rate: 0.277777777778");
+map.addLayer(circle_139)
+
+var circle_140 = L.circle([37.4418834, -122.1430195], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_140.bindPopup("Location: Palo Alto, CA; The Success Rate: 0.5");
+map.addLayer(circle_140)
+
+var circle_141 = L.circle([33.6839473, -117.7946942], 42857.1428571, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_141.bindPopup("Location: Irvine, CA; The Success Rate: 0.428571428571");
+map.addLayer(circle_141)
+
+var circle_142 = L.circle([36.8507689, -76.2858726], 18181.8181818, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_142.bindPopup("Location: Norfolk, VA; The Success Rate: 0.181818181818");
+map.addLayer(circle_142)
+
+var circle_143 = L.circle([35.110703, -106.609991], 40000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_143.bindPopup("Location: Albuquerque, NM; The Success Rate: 0.4");
+map.addLayer(circle_143)
+
+var circle_144 = L.circle([43.661471, -70.2553259], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_144.bindPopup("Location: Portland, ME; The Success Rate: 0.5");
+map.addLayer(circle_144)
+
+var circle_145 = L.circle([37.4137536, -79.1422464], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_145.bindPopup("Location: Lynchburg, VA; The Success Rate: 0.5");
+map.addLayer(circle_145)
+
+var circle_146 = L.circle([30.4382559, -84.2807329], 22222.2222222, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_146.bindPopup("Location: Tallahassee, FL; The Success Rate: 0.222222222222");
+map.addLayer(circle_146)
+
+var circle_147 = L.circle([33.7489954, -84.3879824], 25396.8253968, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_147.bindPopup("Location: Atlanta, GA; The Success Rate: 0.253968253968");
+map.addLayer(circle_147)
+
+var circle_148 = L.circle([40.8259007, -74.2090053], 50000.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_148.bindPopup("Location: Montclair, NJ; The Success Rate: 0.5");
+map.addLayer(circle_148)
+
+var circle_149 = L.circle([38.4404674, -122.7144314], 33333.3333333, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_149.bindPopup("Location: Santa Rosa, CA; The Success Rate: 0.333333333333");
+map.addLayer(circle_149)
+
+var circle_150 = L.circle([40.2968979, -111.6946475], 66666.6666667, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_150.bindPopup("Location: Orem, UT; The Success Rate: 0.666666666667");
+map.addLayer(circle_150)
+
+var circle_151 = L.circle([35.5950581, -82.5514869], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_151.bindPopup("Location: Asheville, NC; The Success Rate: 0.625");
+map.addLayer(circle_151)
+
+var circle_152 = L.circle([40.7143528, -74.0059731], 61736.3344051, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_152.bindPopup("Location: New York, NY; The Success Rate: 0.617363344051");
+map.addLayer(circle_152)
+
+var circle_153 = L.circle([36.1699412, -115.1398296], 13888.8888889, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_153.bindPopup("Location: Las Vegas, NV; The Success Rate: 0.138888888889");
+map.addLayer(circle_153)
+
+var circle_154 = L.circle([33.952602, -84.5499327], 62500.0, {
+                            color: 'green',
+                            fillColor: 'green',
+                            fillOpacity: 0.6
+                            });
+circle_154.bindPopup("Location: Marietta, GA; The Success Rate: 0.625");
+map.addLayer(circle_154)
+
+
+
+
+
+
+</script>
+
+</body>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 960px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([0, 0], 2);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var circle_1 = L.circle([41.8781136, -87.6297982], 16600, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_1.bindPopup("Location: Chicago, IL; Number of Projects: 166");
+map.addLayer(circle_1)
+
+var circle_2 = L.circle([30.267153, -97.7430608], 9700, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_2.bindPopup("Location: Austin, TX; Number of Projects: 97");
+map.addLayer(circle_2)
+
+var circle_3 = L.circle([39.737567, -104.9847179], 7700, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_3.bindPopup("Location: Denver, CO; Number of Projects: 77");
+map.addLayer(circle_3)
+
+var circle_4 = L.circle([51.508515, -0.1254872], 34900, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_4.bindPopup("Location: London, UK; Number of Projects: 349");
+map.addLayer(circle_4)
+
+var circle_5 = L.circle([32.7153292, -117.1572551], 8800, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_5.bindPopup("Location: San Diego, CA; Number of Projects: 88");
+map.addLayer(circle_5)
+
+var circle_6 = L.circle([43.653226, -79.3831843], 8400, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_6.bindPopup("Location: Toronto, Canada; Number of Projects: 84");
+map.addLayer(circle_6)
+
+var circle_7 = L.circle([38.9072309, -77.0364641], 5800, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_7.bindPopup("Location: Washington, DC; Number of Projects: 58");
+map.addLayer(circle_7)
+
+var circle_8 = L.circle([42.3584308, -71.0597732], 5800, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_8.bindPopup("Location: Boston, MA; Number of Projects: 58");
+map.addLayer(circle_8)
+
+var circle_9 = L.circle([40.65, -73.95], 15500, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_9.bindPopup("Location: Brooklyn, NY; Number of Projects: 155");
+map.addLayer(circle_9)
+
+var circle_10 = L.circle([37.7749295, -122.4194155], 13200, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_10.bindPopup("Location: San Francisco, CA; Number of Projects: 132");
+map.addLayer(circle_10)
+
+var circle_11 = L.circle([39.952335, -75.163789], 7000, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_11.bindPopup("Location: Philadelphia, PA; Number of Projects: 70");
+map.addLayer(circle_11)
+
+var circle_12 = L.circle([34.0522342, -118.2436849], 37200, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_12.bindPopup("Location: Los Angeles, CA; Number of Projects: 372");
+map.addLayer(circle_12)
+
+var circle_13 = L.circle([44.983334, -93.26667], 7300, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_13.bindPopup("Location: Minneapolis, MN; Number of Projects: 73");
+map.addLayer(circle_13)
+
+var circle_14 = L.circle([47.6062095, -122.3320708], 8800, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_14.bindPopup("Location: Seattle, WA; Number of Projects: 88");
+map.addLayer(circle_14)
+
+var circle_15 = L.circle([45.5234515, -122.6762071], 9200, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_15.bindPopup("Location: Portland, OR; Number of Projects: 92");
+map.addLayer(circle_15)
+
+var circle_16 = L.circle([45.5086699, -73.5539925], 5700, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_16.bindPopup("Location: Montreal, Canada; Number of Projects: 57");
+map.addLayer(circle_16)
+
+var circle_17 = L.circle([33.7489954, -84.3879824], 6300, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_17.bindPopup("Location: Atlanta, GA; Number of Projects: 63");
+map.addLayer(circle_17)
+
+var circle_18 = L.circle([40.7143528, -74.0059731], 31100, {
+                            color: 'red',
+                            fillColor: 'red',
+                            fillOpacity: 0.6
+                            });
+circle_18.bindPopup("Location: New York, NY; Number of Projects: 311");
+map.addLayer(circle_18)
+
+
+
+
+
+
+</script>
+
+</body>

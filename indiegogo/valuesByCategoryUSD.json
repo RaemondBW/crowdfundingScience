@@ -1,0 +1,177 @@
+{
+    "data" : [{
+        "category": "ANIMALS",
+        "successful": 216, 
+        "raised": 2268929.0, 
+        "backers": 50477, 
+        "numProjects": 510
+    }, 
+    {
+        "category":"WRITING",
+        "successful": 314, 
+        "raised": 2770263.0, 
+        "backers": 44620, 
+        "numProjects": 710
+    }, 
+    {
+        "category":"ENVIRONMENT",
+        "successful": 117, 
+        "raised": 2406638.0, 
+        "backers": 33003, 
+        "numProjects": 352
+    }, 
+    {
+        "category":"DESIGN",
+        "successful": 114, 
+        "raised": 7813107.0, 
+        "backers": 89736, 
+        "numProjects": 341
+    }, 
+    {
+        "category":"SMALL BUSINESS",
+        "successful": 266, 
+        "raised": 5875476.0, 
+        "backers": 74653, 
+        "numProjects": 977
+    }, 
+    {
+        "category":"POLITICS",
+        "successful": 67, 
+        "raised": 1591313.0, 
+        "backers": 25646, 
+        "numProjects": 172
+    }, 
+    {
+        "category":"FILM",
+        "successful": 2590, 
+        "raised": 37751756.0, 
+        "backers": 420530, 
+        "numProjects": 7682
+    }, 
+    {
+        "category":"FASHION",
+        "successful": 100, 
+        "raised": 2364095.0, 
+        "backers": 32250, 
+        "numProjects": 281
+    }, 
+    {
+        "category":"DANCE",
+        "successful": 209, 
+        "raised": 1581586.0, 
+        "backers": 19181, 
+        "numProjects": 487
+    }, 
+    {
+        "category":"PHOTOGRAPHY",
+        "successful": 137, 
+        "raised": 1824830.0, 
+        "backers": 24730, 
+        "numProjects": 334
+    }, 
+    {
+        "category":"VIDEO / WEB",
+        "successful": 359, 
+        "raised": 5897643.0, 
+        "backers": 108316, 
+        "numProjects": 1012
+    }, 
+    {
+        "category":"COMMUNITY",
+        "successful": 1284, 
+        "raised": 16126098.0, 
+        "backers": 234298, 
+        "numProjects": 3097
+    }, 
+    {
+        "category":"RELIGION",
+        "successful": 83, 
+        "raised": 1484747.0, 
+        "backers": 15990, 
+        "numProjects": 211
+    }, 
+    {
+        "category":"COMIC",
+        "successful": 116, 
+        "raised": 1282319.0, 
+        "backers": 23315, 
+        "numProjects": 222
+    }, 
+    {
+        "category":"GAMING",
+        "successful": 167, 
+        "raised": 4385691.0, 
+        "backers": 88118, 
+        "numProjects": 345
+    }, 
+    {
+        "category":"THEATER",
+        "successful": 1005, 
+        "raised": 8005799.0, 
+        "backers": 108804, 
+        "numProjects": 2161
+    }, 
+    {
+        "category":"FOOD",
+        "successful": 128, 
+        "raised": 2802758.0, 
+        "backers": 31859, 
+        "numProjects": 445
+    }, 
+    {
+        "category":"MUSIC",
+        "successful": 1337, 
+        "raised": 13714141.0, 
+        "backers": 217894, 
+        "numProjects": 3078
+    }, 
+    {
+        "category":"NO CATEGORY",
+        "successful": 2, 
+        "raised": 7500.0, 
+        "backers": 51, 
+        "numProjects": 2
+    }, 
+    {
+        "category":"TRANSMEDIA",
+        "successful": 46, 
+        "raised": 843077.0, 
+        "backers": 11104, 
+        "numProjects": 165
+    }, 
+    {
+        "category":"TECHNOLOGY",
+        "successful": 204, 
+        "raised": 29590917.0, 
+        "backers": 196731, 
+        "numProjects": 757
+    }, 
+    {
+        "category":"ART",
+        "successful": 438, 
+        "raised": 4484323.0, 
+        "backers": 62367, 
+        "numProjects": 1065
+    }, 
+    {
+        "category":"SPORTS",
+        "successful": 166, 
+        "raised": 1610929.0, 
+        "backers": 18663, 
+        "numProjects": 437
+    }, 
+    {
+        "category":"HEALTH",
+        "successful": 789, 
+        "raised": 11476313.0, 
+        "backers": 150207, 
+        "numProjects": 1976
+    }, 
+    {
+        "category":"EDUCATION",
+        "successful": 711, 
+        "raised": 8539921.0, 
+        "backers": 101195, 
+        "numProjects": 1890
+    }]
+}

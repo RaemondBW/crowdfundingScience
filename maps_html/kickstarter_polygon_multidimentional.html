@@ -1,0 +1,2958 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   <script src="leaflet-dvf.markers.min.js"></script>
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 100%; height: 100%"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([37.61, -122.2], 10);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var polygon_1 = new L.RegularPolygonMarker(new L.LatLng(37.6624312, -121.8746789), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.42971963933
+});
+polygon_1._latlng = polygon_1._centerLatLng
+polygon_1.bindPopup("Location: Pleasanton, CA; Number of Projects: 1; Amount of Money Raised: 620.0");
+map.addLayer(polygon_1)
+
+var polygon_2 = new L.RegularPolygonMarker(new L.LatLng(37.6688205, -122.0807964), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.2839993295
+});
+polygon_2._latlng = polygon_2._centerLatLng
+polygon_2.bindPopup("Location: Hayward, CA; Number of Projects: 1; Amount of Money Raised: 3960.0");
+map.addLayer(polygon_2)
+
+var polygon_3 = new L.RegularPolygonMarker(new L.LatLng(36.6002378, -121.8946761), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 8,
+    rotation: 0,
+    radius: 9.50962982488
+});
+polygon_3._latlng = polygon_3._centerLatLng
+polygon_3.bindPopup("Location: Monterey, CA; Number of Projects: 8; Amount of Money Raised: 13489.0");
+map.addLayer(polygon_3)
+
+var polygon_4 = new L.RegularPolygonMarker(new L.LatLng(38.6262937, -121.2466156), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.05624644229
+});
+polygon_4._latlng = polygon_4._centerLatLng
+polygon_4.bindPopup("Location: Gold River, CA; Number of Projects: 1; Amount of Money Raised: 157.0");
+map.addLayer(polygon_4)
+
+var polygon_5 = new L.RegularPolygonMarker(new L.LatLng(34.2163937, -119.0376023), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 3.21887982486
+});
+polygon_5._latlng = polygon_5._centerLatLng
+polygon_5.bindPopup("Location: Camarillo, CA; Number of Projects: 1; Amount of Money Raised: 25.0");
+map.addLayer(polygon_5)
+
+var polygon_6 = new L.RegularPolygonMarker(new L.LatLng(38.0279762, -121.8846806), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.23959348071
+});
+polygon_6._latlng = polygon_6._centerLatLng
+polygon_6.bindPopup("Location: Pittsburg, CA; Number of Projects: 2; Amount of Money Raised: 3788.0");
+map.addLayer(polygon_6)
+
+var polygon_7 = new L.RegularPolygonMarker(new L.LatLng(34.2694474, -118.781482), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 11.3651560493
+});
+polygon_7._latlng = polygon_7._centerLatLng
+polygon_7.bindPopup("Location: Simi Valley, CA; Number of Projects: 4; Amount of Money Raised: 86263.0");
+map.addLayer(polygon_7)
+
+var polygon_8 = new L.RegularPolygonMarker(new L.LatLng(38.246307, -122.9055518), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.8061457847
+});
+polygon_8._latlng = polygon_8._centerLatLng
+polygon_8.bindPopup("Location: Tomales, CA; Number of Projects: 1; Amount of Money Raised: 49323.0");
+map.addLayer(polygon_8)
+
+var polygon_9 = new L.RegularPolygonMarker(new L.LatLng(34.1083449, -117.2897652), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.48063934001
+});
+polygon_9._latlng = polygon_9._centerLatLng
+polygon_9.bindPopup("Location: San Bernardino, CA; Number of Projects: 2; Amount of Money Raised: 240.0");
+map.addLayer(polygon_9)
+
+var polygon_10 = new L.RegularPolygonMarker(new L.LatLng(33.9022367, -118.081733), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.01660977358
+});
+polygon_10._latlng = polygon_10._centerLatLng
+polygon_10.bindPopup("Location: Norwalk, CA; Number of Projects: 1; Amount of Money Raised: 1115.0");
+map.addLayer(polygon_10)
+
+var polygon_11 = new L.RegularPolygonMarker(new L.LatLng(33.1192068, -117.086421), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 9.56015182294
+});
+polygon_11._latlng = polygon_11._centerLatLng
+polygon_11.bindPopup("Location: Escondido, CA; Number of Projects: 4; Amount of Money Raised: 14188.0");
+map.addLayer(polygon_11)
+
+var polygon_12 = new L.RegularPolygonMarker(new L.LatLng(37.8243715, -122.231635), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.41457896567
+});
+polygon_12._latlng = polygon_12._centerLatLng
+polygon_12.bindPopup("Location: Piedmont, CA; Number of Projects: 1; Amount of Money Raised: 1660.01");
+map.addLayer(polygon_12)
+
+var polygon_13 = new L.RegularPolygonMarker(new L.LatLng(37.8715926, -122.272747), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 18,
+    rotation: 0,
+    radius: 12.7054810303
+});
+polygon_13._latlng = polygon_13._centerLatLng
+polygon_13.bindPopup("Location: Berkeley, CA; Number of Projects: 18; Amount of Money Raised: 329549.23");
+map.addLayer(polygon_13)
+
+var polygon_14 = new L.RegularPolygonMarker(new L.LatLng(33.8358492, -118.3406288), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.1670818333
+});
+polygon_14._latlng = polygon_14._centerLatLng
+polygon_14.bindPopup("Location: Torrance, CA; Number of Projects: 2; Amount of Money Raised: 26032.0");
+map.addLayer(polygon_14)
+
+var polygon_15 = new L.RegularPolygonMarker(new L.LatLng(34.3541659, -119.0592705), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.48768417069
+});
+polygon_15._latlng = polygon_15._centerLatLng
+polygon_15.bindPopup("Location: Santa Paula, CA; Number of Projects: 1; Amount of Money Raised: 657.0");
+map.addLayer(polygon_15)
+
+var polygon_16 = new L.RegularPolygonMarker(new L.LatLng(34.3988838, -119.5184564), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 11.0361329247
+});
+polygon_16._latlng = polygon_16._centerLatLng
+polygon_16.bindPopup("Location: Carpinteria, CA; Number of Projects: 3; Amount of Money Raised: 62077.13");
+map.addLayer(polygon_16)
+
+var polygon_17 = new L.RegularPolygonMarker(new L.LatLng(37.36883, -122.0363496), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.3848040262
+});
+polygon_17._latlng = polygon_17._centerLatLng
+polygon_17.bindPopup("Location: Sunnyvale, CA; Number of Projects: 3; Amount of Money Raised: 4380.0");
+map.addLayer(polygon_17)
+
+var polygon_18 = new L.RegularPolygonMarker(new L.LatLng(39.445723, -123.8052935), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.40488763644
+});
+polygon_18._latlng = polygon_18._centerLatLng
+polygon_18.bindPopup("Location: Fort Bragg, CA; Number of Projects: 1; Amount of Money Raised: 1644.0");
+map.addLayer(polygon_18)
+
+var polygon_19 = new L.RegularPolygonMarker(new L.LatLng(33.7205771, -116.2155619), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.8079350542
+});
+polygon_19._latlng = polygon_19._centerLatLng
+polygon_19.bindPopup("Location: Indio, CA; Number of Projects: 1; Amount of Money Raised: 905.0");
+map.addLayer(polygon_19)
+
+var polygon_20 = new L.RegularPolygonMarker(new L.LatLng(33.640855, -117.603104), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.41115651959
+});
+polygon_20._latlng = polygon_20._centerLatLng
+polygon_20.bindPopup("Location: Rancho Santa Margarita, CA; Number of Projects: 2; Amount of Money Raised: 12224.0");
+map.addLayer(polygon_20)
+
+var polygon_21 = new L.RegularPolygonMarker(new L.LatLng(33.8752935, -117.5664384), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.11850509738
+});
+polygon_21._latlng = polygon_21._centerLatLng
+polygon_21.bindPopup("Location: Corona, CA; Number of Projects: 2; Amount of Money Raised: 3356.0");
+map.addLayer(polygon_21)
+
+var polygon_22 = new L.RegularPolygonMarker(new L.LatLng(37.3229978, -122.0321823), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.6562706333
+});
+polygon_22._latlng = polygon_22._centerLatLng
+polygon_22.bindPopup("Location: Cupertino, CA; Number of Projects: 1; Amount of Money Raised: 42458.0");
+map.addLayer(polygon_22)
+
+var polygon_23 = new L.RegularPolygonMarker(new L.LatLng(34.1383333, -118.6608333), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 11.3324215365
+});
+polygon_23._latlng = polygon_23._centerLatLng
+polygon_23.bindPopup("Location: Calabasas, CA; Number of Projects: 3; Amount of Money Raised: 83484.94");
+map.addLayer(polygon_23)
+
+var polygon_24 = new L.RegularPolygonMarker(new L.LatLng(34.033625, -117.0430865), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: -9.21034037198
+});
+polygon_24._latlng = polygon_24._centerLatLng
+polygon_24.bindPopup("Location: Yucaipa, CA; Number of Projects: 1; Amount of Money Raised: 0.0");
+map.addLayer(polygon_24)
+
+var polygon_25 = new L.RegularPolygonMarker(new L.LatLng(37.654656, -122.4077498), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.59362804196
+});
+polygon_25._latlng = polygon_25._centerLatLng
+polygon_25.bindPopup("Location: South San Francisco, CA; Number of Projects: 3; Amount of Money Raised: 14671.0");
+map.addLayer(polygon_25)
+
+var polygon_26 = new L.RegularPolygonMarker(new L.LatLng(41.7557501, -124.2025913), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.60517118599
+});
+polygon_26._latlng = polygon_26._centerLatLng
+polygon_26.bindPopup("Location: Crescent City, CA; Number of Projects: 1; Amount of Money Raised: 100.0");
+map.addLayer(polygon_26)
+
+var polygon_27 = new L.RegularPolygonMarker(new L.LatLng(37.9577016, -121.2907796), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.83433698858
+});
+polygon_27._latlng = polygon_27._centerLatLng
+polygon_27.bindPopup("Location: Stockton, CA; Number of Projects: 1; Amount of Money Raised: 6866.0");
+map.addLayer(polygon_27)
+
+var polygon_28 = new L.RegularPolygonMarker(new L.LatLng(33.9191799, -118.4164652), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.52813315124
+});
+polygon_28._latlng = polygon_28._centerLatLng
+polygon_28.bindPopup("Location: El Segundo, CA; Number of Projects: 2; Amount of Money Raised: 5055.0");
+map.addLayer(polygon_28)
+
+var polygon_29 = new L.RegularPolygonMarker(new L.LatLng(37.3841066, -122.2352443), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.204702643
+});
+polygon_29._latlng = polygon_29._centerLatLng
+polygon_29.bindPopup("Location: Portola Valley, CA; Number of Projects: 1; Amount of Money Raised: 27030.0");
+map.addLayer(polygon_29)
+
+var polygon_30 = new L.RegularPolygonMarker(new L.LatLng(34.1705609, -118.8375937), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.89932892241
+});
+polygon_30._latlng = polygon_30._centerLatLng
+polygon_30.bindPopup("Location: Thousand Oaks, CA; Number of Projects: 3; Amount of Money Raised: 19917.0");
+map.addLayer(polygon_30)
+
+var polygon_31 = new L.RegularPolygonMarker(new L.LatLng(33.8958492, -118.2200712), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.31322045376
+});
+polygon_31._latlng = polygon_31._centerLatLng
+polygon_31.bindPopup("Location: Compton, CA; Number of Projects: 1; Amount of Money Raised: 1500.0");
+map.addLayer(polygon_31)
+
+var polygon_32 = new L.RegularPolygonMarker(new L.LatLng(38.4021359, -122.8238806), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.29279888323
+});
+polygon_32._latlng = polygon_32._centerLatLng
+polygon_32.bindPopup("Location: Sebastopol, CA; Number of Projects: 2; Amount of Money Raised: 3995.0");
+map.addLayer(polygon_32)
+
+var polygon_33 = new L.RegularPolygonMarker(new L.LatLng(33.9164032, -118.3525748), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: -9.21034037198
+});
+polygon_33._latlng = polygon_33._centerLatLng
+polygon_33.bindPopup("Location: Hawthorne, CA; Number of Projects: 1; Amount of Money Raised: 0.0");
+map.addLayer(polygon_33)
+
+var polygon_34 = new L.RegularPolygonMarker(new L.LatLng(36.5552386, -121.9232879), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.34601027443
+});
+polygon_34._latlng = polygon_34._centerLatLng
+polygon_34.bindPopup("Location: Carmel-by-the-Sea, CA; Number of Projects: 1; Amount of Money Raised: 1550.0");
+map.addLayer(polygon_34)
+
+var polygon_35 = new L.RegularPolygonMarker(new L.LatLng(34.0922335, -117.435048), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.45958593968
+});
+polygon_35._latlng = polygon_35._centerLatLng
+polygon_35.bindPopup("Location: Fontana, CA; Number of Projects: 2; Amount of Money Raised: 235.0");
+map.addLayer(polygon_35)
+
+var polygon_36 = new L.RegularPolygonMarker(new L.LatLng(37.9779776, -122.0310733), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.59588996797
+});
+polygon_36._latlng = polygon_36._centerLatLng
+polygon_36.bindPopup("Location: Concord, CA; Number of Projects: 3; Amount of Money Raised: 1990.0");
+map.addLayer(polygon_36)
+
+var polygon_37 = new L.RegularPolygonMarker(new L.LatLng(38.5815719, -121.4943996), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 25,
+    rotation: 0,
+    radius: 10.7893603153
+});
+polygon_37._latlng = polygon_37._centerLatLng
+polygon_37.bindPopup("Location: Sacramento, CA; Number of Projects: 25; Amount of Money Raised: 48502.0");
+map.addLayer(polygon_37)
+
+var polygon_38 = new L.RegularPolygonMarker(new L.LatLng(33.6189101, -117.9289469), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 11.5743925563
+});
+polygon_38._latlng = polygon_38._centerLatLng
+polygon_38.bindPopup("Location: Newport Beach, CA; Number of Projects: 4; Amount of Money Raised: 106339.55");
+map.addLayer(polygon_38)
+
+var polygon_39 = new L.RegularPolygonMarker(new L.LatLng(33.8491816, -118.3884078), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.39321603424
+});
+polygon_39._latlng = polygon_39._centerLatLng
+polygon_39.bindPopup("Location: Redondo Beach, CA; Number of Projects: 3; Amount of Money Raised: 4417.0");
+map.addLayer(polygon_39)
+
+var polygon_40 = new L.RegularPolygonMarker(new L.LatLng(37.831316, -122.2852473), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 11.6277067563
+});
+polygon_40._latlng = polygon_40._centerLatLng
+polygon_40.bindPopup("Location: Emeryville, CA; Number of Projects: 4; Amount of Money Raised: 112162.81");
+map.addLayer(polygon_40)
+
+var polygon_41 = new L.RegularPolygonMarker(new L.LatLng(33.9172357, -118.0120086), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.3496674459
+});
+polygon_41._latlng = polygon_41._centerLatLng
+polygon_41.bindPopup("Location: La Mirada, CA; Number of Projects: 1; Amount of Money Raised: 11495.0");
+map.addLayer(polygon_41)
+
+var polygon_42 = new L.RegularPolygonMarker(new L.LatLng(33.7739053, -117.9414477), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.93925404294
+});
+polygon_42._latlng = polygon_42._centerLatLng
+polygon_42.bindPopup("Location: Garden Grove, CA; Number of Projects: 1; Amount of Money Raised: 1032.0");
+map.addLayer(polygon_42)
+
+var polygon_43 = new L.RegularPolygonMarker(new L.LatLng(32.9594891, -117.2653146), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.77992202111
+});
+polygon_43._latlng = polygon_43._centerLatLng
+polygon_43.bindPopup("Location: Del Mar, CA; Number of Projects: 1; Amount of Money Raised: 880.0");
+map.addLayer(polygon_43)
+
+var polygon_44 = new L.RegularPolygonMarker(new L.LatLng(38.4087993, -121.3716178), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 1.60945791223
+});
+polygon_44._latlng = polygon_44._centerLatLng
+polygon_44.bindPopup("Location: Elk Grove, CA; Number of Projects: 1; Amount of Money Raised: 5.0");
+map.addLayer(polygon_44)
+
+var polygon_45 = new L.RegularPolygonMarker(new L.LatLng(38.617127, -121.3282843), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.5451778351
+});
+polygon_45._latlng = polygon_45._centerLatLng
+polygon_45.bindPopup("Location: Carmichael, CA; Number of Projects: 1; Amount of Money Raised: 256.0");
+map.addLayer(polygon_45)
+
+var polygon_46 = new L.RegularPolygonMarker(new L.LatLng(38.5804609, -121.530234), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.45042128099
+});
+polygon_46._latlng = polygon_46._centerLatLng
+polygon_46.bindPopup("Location: West Sacramento, CA; Number of Projects: 2; Amount of Money Raised: 12713.52");
+map.addLayer(polygon_46)
+
+var polygon_47 = new L.RegularPolygonMarker(new L.LatLng(36.9771729, -121.8994016), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.99759607439
+});
+polygon_47._latlng = polygon_47._centerLatLng
+polygon_47.bindPopup("Location: Aptos, CA; Number of Projects: 1; Amount of Money Raised: 1094.0");
+map.addLayer(polygon_47)
+
+var polygon_48 = new L.RegularPolygonMarker(new L.LatLng(32.7153292, -117.1572551), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 88,
+    rotation: 0,
+    radius: 14.3930229843
+});
+polygon_48._latlng = polygon_48._centerLatLng
+polygon_48.bindPopup("Location: San Diego, CA; Number of Projects: 88; Amount of Money Raised: 1781601.05");
+map.addLayer(polygon_48)
+
+var polygon_49 = new L.RegularPolygonMarker(new L.LatLng(38.0043667, -122.2988587), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 2.30259509294
+});
+polygon_49._latlng = polygon_49._centerLatLng
+polygon_49.bindPopup("Location: Pinole, CA; Number of Projects: 1; Amount of Money Raised: 10.0");
+map.addLayer(polygon_49)
+
+var polygon_50 = new L.RegularPolygonMarker(new L.LatLng(36.5138398, -119.5540175), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.32974975462
+});
+polygon_50._latlng = polygon_50._centerLatLng
+polygon_50.bindPopup("Location: Kingsburg, CA; Number of Projects: 1; Amount of Money Raised: 1525.0");
+map.addLayer(polygon_50)
+
+var polygon_51 = new L.RegularPolygonMarker(new L.LatLng(33.7475203, -116.9719684), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.41691216829
+});
+polygon_51._latlng = polygon_51._centerLatLng
+polygon_51.bindPopup("Location: Hemet, CA; Number of Projects: 3; Amount of Money Raised: 612.11");
+map.addLayer(polygon_51)
+
+var polygon_52 = new L.RegularPolygonMarker(new L.LatLng(34.1533395, -118.7616764), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 3.91202500543
+});
+polygon_52._latlng = polygon_52._centerLatLng
+polygon_52.bindPopup("Location: Agoura Hills, CA; Number of Projects: 1; Amount of Money Raised: 50.0");
+map.addLayer(polygon_52)
+
+var polygon_53 = new L.RegularPolygonMarker(new L.LatLng(32.7678287, -117.0230839), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.23489849241
+});
+polygon_53._latlng = polygon_53._centerLatLng
+polygon_53.bindPopup("Location: La Mesa, CA; Number of Projects: 1; Amount of Money Raised: 1387.0");
+map.addLayer(polygon_53)
+
+var polygon_54 = new L.RegularPolygonMarker(new L.LatLng(37.5482697, -121.9885719), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 5,
+    rotation: 0,
+    radius: 11.6742527606
+});
+polygon_54._latlng = polygon_54._centerLatLng
+polygon_54.bindPopup("Location: Fremont, CA; Number of Projects: 5; Amount of Money Raised: 117506.95");
+map.addLayer(polygon_54)
+
+var polygon_55 = new L.RegularPolygonMarker(new L.LatLng(33.5539143, -117.2139232), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.8283145373
+});
+polygon_55._latlng = polygon_55._centerLatLng
+polygon_55.bindPopup("Location: Murrieta, CA; Number of Projects: 1; Amount of Money Raised: 125.0");
+map.addLayer(polygon_55)
+
+var polygon_56 = new L.RegularPolygonMarker(new L.LatLng(33.9802893, -118.4517449), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.2541444277
+});
+polygon_56._latlng = polygon_56._centerLatLng
+polygon_56.bindPopup("Location: Marina del Rey, CA; Number of Projects: 1; Amount of Money Raised: 28400.0");
+map.addLayer(polygon_56)
+
+var polygon_57 = new L.RegularPolygonMarker(new L.LatLng(34.3916641, -118.542586), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 5,
+    rotation: 0,
+    radius: 9.36589008128
+});
+polygon_57._latlng = polygon_57._centerLatLng
+polygon_57.bindPopup("Location: Santa Clarita, CA; Number of Projects: 5; Amount of Money Raised: 11683.0");
+map.addLayer(polygon_57)
+
+var polygon_58 = new L.RegularPolygonMarker(new L.LatLng(39.2615606, -121.0160594), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.6611576315
+});
+polygon_58._latlng = polygon_58._centerLatLng
+polygon_58.bindPopup("Location: Nevada City, CA; Number of Projects: 2; Amount of Money Raised: 42666.0");
+map.addLayer(polygon_58)
+
+var polygon_59 = new L.RegularPolygonMarker(new L.LatLng(34.7402853, -117.3257169), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.13827266774
+});
+polygon_59._latlng = polygon_59._centerLatLng
+polygon_59.bindPopup("Location: Helendale, CA; Number of Projects: 1; Amount of Money Raised: 3423.0");
+map.addLayer(polygon_59)
+
+var polygon_60 = new L.RegularPolygonMarker(new L.LatLng(37.0057816, -121.5682751), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.69709382208
+});
+polygon_60._latlng = polygon_60._centerLatLng
+polygon_60.bindPopup("Location: Gilroy, CA; Number of Projects: 2; Amount of Money Raised: 298.0");
+map.addLayer(polygon_60)
+
+var polygon_61 = new L.RegularPolygonMarker(new L.LatLng(39.7284944, -121.8374777), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.06432199237
+});
+polygon_61._latlng = polygon_61._centerLatLng
+polygon_61.bindPopup("Location: Chico, CA; Number of Projects: 3; Amount of Money Raised: 3179.0");
+map.addLayer(polygon_61)
+
+var polygon_62 = new L.RegularPolygonMarker(new L.LatLng(38.5449065, -121.7405167), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.32256541946
+});
+polygon_62._latlng = polygon_62._centerLatLng
+polygon_62.bindPopup("Location: Davis, CA; Number of Projects: 3; Amount of Money Raised: 557.0");
+map.addLayer(polygon_62)
+
+var polygon_63 = new L.RegularPolygonMarker(new L.LatLng(34.4358294, -119.8276389), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.6949246907
+});
+polygon_63._latlng = polygon_63._centerLatLng
+polygon_63.bindPopup("Location: Goleta, CA; Number of Projects: 3; Amount of Money Raised: 16235.0");
+map.addLayer(polygon_63)
+
+var polygon_64 = new L.RegularPolygonMarker(new L.LatLng(37.4635519, -122.4285862), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.72388230922
+});
+polygon_64._latlng = polygon_64._centerLatLng
+polygon_64.bindPopup("Location: Half Moon Bay, CA; Number of Projects: 2; Amount of Money Raised: 16712.0");
+map.addLayer(polygon_64)
+
+var polygon_65 = new L.RegularPolygonMarker(new L.LatLng(34.0483474, -117.2611527), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.97126209489
+});
+polygon_65._latlng = polygon_65._centerLatLng
+polygon_65.bindPopup("Location: Loma Linda, CA; Number of Projects: 1; Amount of Money Raised: 392.0");
+map.addLayer(polygon_65)
+
+var polygon_66 = new L.RegularPolygonMarker(new L.LatLng(37.8043637, -122.2711137), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 35,
+    rotation: 0,
+    radius: 12.7756982254
+});
+polygon_66._latlng = polygon_66._centerLatLng
+polygon_66.bindPopup("Location: Oakland, CA; Number of Projects: 35; Amount of Money Raised: 353521.02");
+map.addLayer(polygon_66)
+
+var polygon_67 = new L.RegularPolygonMarker(new L.LatLng(36.9613356, -120.0607176), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.63148196603
+});
+polygon_67._latlng = polygon_67._centerLatLng
+polygon_67.bindPopup("Location: Madera, CA; Number of Projects: 2; Amount of Money Raised: 15237.0");
+map.addLayer(polygon_67)
+
+var polygon_68 = new L.RegularPolygonMarker(new L.LatLng(37.4849377, -119.9662843), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.99864671048
+});
+polygon_68._latlng = polygon_68._centerLatLng
+polygon_68.bindPopup("Location: Mariposa, CA; Number of Projects: 1; Amount of Money Raised: 1095.15");
+map.addLayer(polygon_68)
+
+var polygon_69 = new L.RegularPolygonMarker(new L.LatLng(32.6858853, -117.1830891), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.16408699793
+});
+polygon_69._latlng = polygon_69._centerLatLng
+polygon_69.bindPopup("Location: Coronado, CA; Number of Projects: 1; Amount of Money Raised: 9548.0");
+map.addLayer(polygon_69)
+
+var polygon_70 = new L.RegularPolygonMarker(new L.LatLng(33.7455731, -117.8678338), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 9.46753747115
+});
+polygon_70._latlng = polygon_70._centerLatLng
+polygon_70.bindPopup("Location: Santa Ana, CA; Number of Projects: 4; Amount of Money Raised: 12933.0");
+map.addLayer(polygon_70)
+
+var polygon_71 = new L.RegularPolygonMarker(new L.LatLng(39.327962, -120.1832533), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.56526511088
+});
+polygon_71._latlng = polygon_71._centerLatLng
+polygon_71.bindPopup("Location: Truckee, CA; Number of Projects: 2; Amount of Money Raised: 710.0");
+map.addLayer(polygon_71)
+
+var polygon_72 = new L.RegularPolygonMarker(new L.LatLng(40.5865396, -122.3916754), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 10.0453759324
+});
+polygon_72._latlng = polygon_72._centerLatLng
+polygon_72.bindPopup("Location: Redding, CA; Number of Projects: 4; Amount of Money Raised: 23048.96");
+map.addLayer(polygon_72)
+
+var polygon_73 = new L.RegularPolygonMarker(new L.LatLng(34.1808392, -118.3089661), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 12,
+    rotation: 0,
+    radius: 11.8264800154
+});
+polygon_73._latlng = polygon_73._centerLatLng
+polygon_73.bindPopup("Location: Burbank, CA; Number of Projects: 12; Amount of Money Raised: 136828.01");
+map.addLayer(polygon_73)
+
+var polygon_74 = new L.RegularPolygonMarker(new L.LatLng(37.8590937, -122.4852507), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.5923396382
+});
+polygon_74._latlng = polygon_74._centerLatLng
+polygon_74.bindPopup("Location: Sausalito, CA; Number of Projects: 2; Amount of Money Raised: 14652.11");
+map.addLayer(polygon_74)
+
+var polygon_75 = new L.RegularPolygonMarker(new L.LatLng(37.7396513, -121.4252227), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.61050138677
+});
+polygon_75._latlng = polygon_75._centerLatLng
+polygon_75.bindPopup("Location: Tracy, CA; Number of Projects: 2; Amount of Money Raised: 5489.0");
+map.addLayer(polygon_75)
+
+var polygon_76 = new L.RegularPolygonMarker(new L.LatLng(34.0211224, -118.3964665), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.43324390249
+});
+polygon_76._latlng = polygon_76._centerLatLng
+polygon_76.bindPopup("Location: Culver City, CA; Number of Projects: 1; Amount of Money Raised: 12497.0");
+map.addLayer(polygon_76)
+
+var polygon_77 = new L.RegularPolygonMarker(new L.LatLng(38.939926, -119.9771868), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.66185486842
+});
+polygon_77._latlng = polygon_77._centerLatLng
+polygon_77.bindPopup("Location: South Lake Tahoe, CA; Number of Projects: 1; Amount of Money Raised: 782.0");
+map.addLayer(polygon_77)
+
+var polygon_78 = new L.RegularPolygonMarker(new L.LatLng(35.1216424, -120.6212821), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.30276160549
+});
+polygon_78._latlng = polygon_78._centerLatLng
+polygon_78.bindPopup("Location: Grover Beach, CA; Number of Projects: 2; Amount of Money Raised: 4035.0");
+map.addLayer(polygon_78)
+
+var polygon_79 = new L.RegularPolygonMarker(new L.LatLng(37.88687, -122.2977475), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.42952090213
+});
+polygon_79._latlng = polygon_79._centerLatLng
+polygon_79.bindPopup("Location: Albany, CA; Number of Projects: 1; Amount of Money Raised: 1685.0");
+map.addLayer(polygon_79)
+
+var polygon_80 = new L.RegularPolygonMarker(new L.LatLng(37.3541079, -121.9552356), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.5281952826
+});
+polygon_80._latlng = polygon_80._centerLatLng
+polygon_80.bindPopup("Location: Santa Clara, CA; Number of Projects: 2; Amount of Money Raised: 37354.0");
+map.addLayer(polygon_80)
+
+var polygon_81 = new L.RegularPolygonMarker(new L.LatLng(40.8020712, -124.1636729), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.93828458101
+});
+polygon_81._latlng = polygon_81._centerLatLng
+polygon_81.bindPopup("Location: Eureka, CA; Number of Projects: 1; Amount of Money Raised: 1031.0");
+map.addLayer(polygon_81)
+
+var polygon_82 = new L.RegularPolygonMarker(new L.LatLng(38.1074198, -122.5697032), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.7769428079
+});
+polygon_82._latlng = polygon_82._centerLatLng
+polygon_82.bindPopup("Location: Novato, CA; Number of Projects: 2; Amount of Money Raised: 47903.45");
+map.addLayer(polygon_82)
+
+var polygon_83 = new L.RegularPolygonMarker(new L.LatLng(33.6680772, -117.3272615), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 1.60945791223
+});
+polygon_83._latlng = polygon_83._centerLatLng
+polygon_83.bindPopup("Location: Lake Elsinore, CA; Number of Projects: 1; Amount of Money Raised: 5.0");
+map.addLayer(polygon_83)
+
+var polygon_84 = new L.RegularPolygonMarker(new L.LatLng(33.9400143, -118.1325688), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.61005565481
+});
+polygon_84._latlng = polygon_84._centerLatLng
+polygon_84.bindPopup("Location: Downey, CA; Number of Projects: 1; Amount of Money Raised: 14914.0");
+map.addLayer(polygon_84)
+
+var polygon_85 = new L.RegularPolygonMarker(new L.LatLng(34.095287, -118.1270146), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.14077591931
+});
+polygon_85._latlng = polygon_85._centerLatLng
+polygon_85.bindPopup("Location: Alhambra, CA; Number of Projects: 1; Amount of Money Raised: 9328.0");
+map.addLayer(polygon_85)
+
+var polygon_86 = new L.RegularPolygonMarker(new L.LatLng(35.6322789, -120.664187), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.10924780499
+});
+polygon_86._latlng = polygon_86._centerLatLng
+polygon_86.bindPopup("Location: Paso Robles, CA; Number of Projects: 2; Amount of Money Raised: 450.0");
+map.addLayer(polygon_86)
+
+var polygon_87 = new L.RegularPolygonMarker(new L.LatLng(37.3393857, -121.8949555), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 17,
+    rotation: 0,
+    radius: 12.4429126511
+});
+polygon_87._latlng = polygon_87._centerLatLng
+polygon_87.bindPopup("Location: San Jose, CA; Number of Projects: 17; Amount of Money Raised: 253447.67");
+map.addLayer(polygon_87)
+
+var polygon_88 = new L.RegularPolygonMarker(new L.LatLng(33.8144608, -117.8131112), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.00636760098
+});
+polygon_88._latlng = polygon_88._centerLatLng
+polygon_88.bindPopup("Location: Villa Park, CA; Number of Projects: 1; Amount of Money Raised: 3000.0");
+map.addLayer(polygon_88)
+
+var polygon_89 = new L.RegularPolygonMarker(new L.LatLng(36.7468422, -119.7725868), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 9,
+    rotation: 0,
+    radius: 8.74957396394
+});
+polygon_89._latlng = polygon_89._centerLatLng
+polygon_89.bindPopup("Location: Fresno, CA; Number of Projects: 9; Amount of Money Raised: 6308.0");
+map.addLayer(polygon_89)
+
+var polygon_90 = new L.RegularPolygonMarker(new L.LatLng(33.7091847, -117.9536697), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 11.590599216
+});
+polygon_90._latlng = polygon_90._centerLatLng
+polygon_90.bindPopup("Location: Fountain Valley, CA; Number of Projects: 1; Amount of Money Raised: 108077.0");
+map.addLayer(polygon_90)
+
+var polygon_91 = new L.RegularPolygonMarker(new L.LatLng(38.6779591, -121.1760583), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.62552909422
+});
+polygon_91._latlng = polygon_91._centerLatLng
+polygon_91.bindPopup("Location: Folsom, CA; Number of Projects: 3; Amount of Money Raised: 5572.11");
+map.addLayer(polygon_91)
+
+var polygon_92 = new L.RegularPolygonMarker(new L.LatLng(32.9628232, -117.0358646), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.03479581138
+});
+polygon_92._latlng = polygon_92._centerLatLng
+polygon_92.bindPopup("Location: Poway, CA; Number of Projects: 1; Amount of Money Raised: 8390.0");
+map.addLayer(polygon_92)
+
+var polygon_93 = new L.RegularPolygonMarker(new L.LatLng(34.0555693, -117.1825381), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.31656902201
+});
+polygon_93._latlng = polygon_93._centerLatLng
+polygon_93.bindPopup("Location: Redlands, CA; Number of Projects: 1; Amount of Money Raised: 553.67");
+map.addLayer(polygon_93)
+
+var polygon_94 = new L.RegularPolygonMarker(new L.LatLng(34.274646, -119.2290316), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 6,
+    rotation: 0,
+    radius: 11.703777782
+});
+polygon_94._latlng = polygon_94._centerLatLng
+polygon_94.bindPopup("Location: Ventura, CA; Number of Projects: 6; Amount of Money Raised: 121028.07");
+map.addLayer(polygon_94)
+
+var polygon_95 = new L.RegularPolygonMarker(new L.LatLng(40.1784886, -122.2358302), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.25488488075
+});
+polygon_95._latlng = polygon_95._centerLatLng
+polygon_95.bindPopup("Location: Red Bluff, CA; Number of Projects: 1; Amount of Money Raised: 1415.0");
+map.addLayer(polygon_95)
+
+var polygon_96 = new L.RegularPolygonMarker(new L.LatLng(33.1958696, -117.3794834), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.45434845904
+});
+polygon_96._latlng = polygon_96._centerLatLng
+polygon_96.bindPopup("Location: Oceanside, CA; Number of Projects: 2; Amount of Money Raised: 86.0");
+map.addLayer(polygon_96)
+
+var polygon_97 = new L.RegularPolygonMarker(new L.LatLng(38.7166871, -121.3644216), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.99950003333e-05
+});
+polygon_97._latlng = polygon_97._centerLatLng
+polygon_97.bindPopup("Location: Antelope, CA; Number of Projects: 1; Amount of Money Raised: 1.0");
+map.addLayer(polygon_97)
+
+var polygon_98 = new L.RegularPolygonMarker(new L.LatLng(33.8702923, -117.925338), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.80612449825
+});
+polygon_98._latlng = polygon_98._centerLatLng
+polygon_98.bindPopup("Location: Fullerton, CA; Number of Projects: 1; Amount of Money Raised: 6675.0");
+map.addLayer(polygon_98)
+
+var polygon_99 = new L.RegularPolygonMarker(new L.LatLng(37.7652065, -122.2416355), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.04035018291
+});
+polygon_99._latlng = polygon_99._centerLatLng
+polygon_99.bindPopup("Location: Alameda, CA; Number of Projects: 1; Amount of Money Raised: 420.04");
+map.addLayer(polygon_99)
+
+var polygon_100 = new L.RegularPolygonMarker(new L.LatLng(35.3732921, -119.0187125), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 9.50181525014
+});
+polygon_100._latlng = polygon_100._centerLatLng
+polygon_100.bindPopup("Location: Bakersfield, CA; Number of Projects: 4; Amount of Money Raised: 13384.0");
+map.addLayer(polygon_100)
+
+var polygon_101 = new L.RegularPolygonMarker(new L.LatLng(37.5949316, -120.9577098), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.17794432152
+});
+polygon_101._latlng = polygon_101._centerLatLng
+polygon_101.bindPopup("Location: Ceres, CA; Number of Projects: 1; Amount of Money Raised: 482.0");
+map.addLayer(polygon_101)
+
+var polygon_102 = new L.RegularPolygonMarker(new L.LatLng(34.1477849, -118.1445155), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 8,
+    rotation: 0,
+    radius: 11.8496306752
+});
+polygon_102._latlng = polygon_102._centerLatLng
+polygon_102.bindPopup("Location: Pasadena, CA; Number of Projects: 8; Amount of Money Raised: 140032.62");
+map.addLayer(polygon_102)
+
+var polygon_103 = new L.RegularPolygonMarker(new L.LatLng(33.1580933, -117.3505939), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 13.4001867776
+});
+polygon_103._latlng = polygon_103._centerLatLng
+polygon_103.bindPopup("Location: Carlsbad, CA; Number of Projects: 1; Amount of Money Raised: 660126.51");
+map.addLayer(polygon_103)
+
+var polygon_104 = new L.RegularPolygonMarker(new L.LatLng(37.7749295, -122.4194155), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 132,
+    rotation: 0,
+    radius: 15.3132306074
+});
+polygon_104._latlng = polygon_104._centerLatLng
+polygon_104.bindPopup("Location: San Francisco, CA; Number of Projects: 132; Amount of Money Raised: 4471482.68");
+map.addLayer(polygon_104)
+
+var polygon_105 = new L.RegularPolygonMarker(new L.LatLng(34.1425078, -118.255075), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 9,
+    rotation: 0,
+    radius: 10.3830546835
+});
+polygon_105._latlng = polygon_105._centerLatLng
+polygon_105.bindPopup("Location: Glendale, CA; Number of Projects: 9; Amount of Money Raised: 32307.5");
+map.addLayer(polygon_105)
+
+var polygon_106 = new L.RegularPolygonMarker(new L.LatLng(34.0522342, -118.2436849), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 372,
+    rotation: 0,
+    radius: 15.4453133063
+});
+polygon_106._latlng = polygon_106._centerLatLng
+polygon_106.bindPopup("Location: Los Angeles, CA; Number of Projects: 372; Amount of Money Raised: 5102868.07");
+map.addLayer(polygon_106)
+
+var polygon_107 = new L.RegularPolygonMarker(new L.LatLng(34.4263886, -117.3008784), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.60517118599
+});
+polygon_107._latlng = polygon_107._centerLatLng
+polygon_107.bindPopup("Location: Hesperia, CA; Number of Projects: 2; Amount of Money Raised: 100.0");
+map.addLayer(polygon_107)
+
+var polygon_108 = new L.RegularPolygonMarker(new L.LatLng(37.424106, -122.1660756), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.31322045376
+});
+polygon_108._latlng = polygon_108._centerLatLng
+polygon_108.bindPopup("Location: Stanford, CA; Number of Projects: 1; Amount of Money Raised: 1500.0");
+map.addLayer(polygon_108)
+
+var polygon_109 = new L.RegularPolygonMarker(new L.LatLng(35.5496939, -120.7060049), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.41832968364
+});
+polygon_109._latlng = polygon_109._centerLatLng
+polygon_109.bindPopup("Location: Templeton, CA; Number of Projects: 2; Amount of Money Raised: 12312.0");
+map.addLayer(polygon_109)
+
+var polygon_110 = new L.RegularPolygonMarker(new L.LatLng(34.0039039, -117.0619755), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.5167931314
+});
+polygon_110._latlng = polygon_110._centerLatLng
+polygon_110.bindPopup("Location: Calimesa, CA; Number of Projects: 1; Amount of Money Raised: 4998.0");
+map.addLayer(polygon_110)
+
+var polygon_111 = new L.RegularPolygonMarker(new L.LatLng(36.3302284, -119.2920585), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.42117758844
+});
+polygon_111._latlng = polygon_111._centerLatLng
+polygon_111.bindPopup("Location: Visalia, CA; Number of Projects: 1; Amount of Money Raised: 1671.0");
+map.addLayer(polygon_111)
+
+var polygon_112 = new L.RegularPolygonMarker(new L.LatLng(34.2419509, -117.2855993), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.67203307204
+});
+polygon_112._latlng = polygon_112._centerLatLng
+polygon_112.bindPopup("Location: Crestline, CA; Number of Projects: 1; Amount of Money Raised: 790.0");
+map.addLayer(polygon_112)
+
+var polygon_113 = new L.RegularPolygonMarker(new L.LatLng(34.0961111, -118.1058333), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.60190200983
+});
+polygon_113._latlng = polygon_113._centerLatLng
+polygon_113.bindPopup("Location: San Gabriel, CA; Number of Projects: 1; Amount of Money Raised: 2002.0");
+map.addLayer(polygon_113)
+
+var polygon_114 = new L.RegularPolygonMarker(new L.LatLng(38.0193657, -122.1341321), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.90536212053
+});
+polygon_114._latlng = polygon_114._centerLatLng
+polygon_114.bindPopup("Location: Martinez, CA; Number of Projects: 1; Amount of Money Raised: 367.0");
+map.addLayer(polygon_114)
+
+var polygon_115 = new L.RegularPolygonMarker(new L.LatLng(33.9791793, -118.032844), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 9.82595835543
+});
+polygon_115._latlng = polygon_115._centerLatLng
+polygon_115.bindPopup("Location: Whittier, CA; Number of Projects: 4; Amount of Money Raised: 18508.0");
+map.addLayer(polygon_115)
+
+var polygon_116 = new L.RegularPolygonMarker(new L.LatLng(38.291859, -122.4580356), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.2186996753
+});
+polygon_116._latlng = polygon_116._centerLatLng
+polygon_116.bindPopup("Location: Sonoma, CA; Number of Projects: 2; Amount of Money Raised: 27411.0");
+map.addLayer(polygon_116)
+
+var polygon_117 = new L.RegularPolygonMarker(new L.LatLng(37.3860517, -122.0838511), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 6,
+    rotation: 0,
+    radius: 9.93097236574
+});
+polygon_117._latlng = polygon_117._centerLatLng
+polygon_117.bindPopup("Location: Mountain View, CA; Number of Projects: 6; Amount of Money Raised: 20557.32");
+map.addLayer(polygon_117)
+
+var polygon_118 = new L.RegularPolygonMarker(new L.LatLng(33.5422475, -117.7831104), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.10269694942
+});
+polygon_118._latlng = polygon_118._centerLatLng
+polygon_118.bindPopup("Location: Laguna Beach, CA; Number of Projects: 2; Amount of Money Raised: 1215.24");
+map.addLayer(polygon_118)
+
+var polygon_119 = new L.RegularPolygonMarker(new L.LatLng(35.3658075, -120.8499013), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.98564191015
+});
+polygon_119._latlng = polygon_119._centerLatLng
+polygon_119.bindPopup("Location: Morro Bay, CA; Number of Projects: 1; Amount of Money Raised: 1081.0");
+map.addLayer(polygon_119)
+
+var polygon_120 = new L.RegularPolygonMarker(new L.LatLng(37.5629917, -122.3255254), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.03455740394
+});
+polygon_120._latlng = polygon_120._centerLatLng
+polygon_120.bindPopup("Location: San Mateo, CA; Number of Projects: 2; Amount of Money Raised: 8388.0");
+map.addLayer(polygon_120)
+
+var polygon_121 = new L.RegularPolygonMarker(new L.LatLng(36.6313367, -119.0131624), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.90527551918
+});
+polygon_121._latlng = polygon_121._centerLatLng
+polygon_121.bindPopup("Location: Badger, CA; Number of Projects: 1; Amount of Money Raised: 135.0");
+map.addLayer(polygon_121)
+
+var polygon_122 = new L.RegularPolygonMarker(new L.LatLng(34.0633443, -117.6508876), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.68586107191
+});
+polygon_122._latlng = polygon_122._centerLatLng
+polygon_122.bindPopup("Location: Ontario, CA; Number of Projects: 1; Amount of Money Raised: 801.0");
+map.addLayer(polygon_122)
+
+var polygon_123 = new L.RegularPolygonMarker(new L.LatLng(36.6844029, -121.802173), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.79909295749
+});
+polygon_123._latlng = polygon_123._centerLatLng
+polygon_123.bindPopup("Location: Marina, CA; Number of Projects: 1; Amount of Money Raised: 330.0");
+map.addLayer(polygon_123)
+
+var polygon_124 = new L.RegularPolygonMarker(new L.LatLng(33.8302961, -116.5452921), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.4495565641
+});
+polygon_124._latlng = polygon_124._centerLatLng
+polygon_124.bindPopup("Location: Palm Springs, CA; Number of Projects: 2; Amount of Money Raised: 4673.0");
+map.addLayer(polygon_124)
+
+var polygon_125 = new L.RegularPolygonMarker(new L.LatLng(34.1394513, -117.9772873), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.44805747401
+});
+polygon_125._latlng = polygon_125._centerLatLng
+polygon_125.bindPopup("Location: Duarte, CA; Number of Projects: 1; Amount of Money Raised: 4666.0");
+map.addLayer(polygon_125)
+
+var polygon_126 = new L.RegularPolygonMarker(new L.LatLng(33.599722, -117.699444), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.3151997767
+});
+polygon_126._latlng = polygon_126._centerLatLng
+polygon_126.bindPopup("Location: Laguna Hills, CA; Number of Projects: 1; Amount of Money Raised: 30188.0");
+map.addLayer(polygon_126)
+
+var polygon_127 = new L.RegularPolygonMarker(new L.LatLng(39.9368363, -120.9471764), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.21964211334
+});
+polygon_127._latlng = polygon_127._centerLatLng
+polygon_127.bindPopup("Location: Quincy, CA; Number of Projects: 1; Amount of Money Raised: 1366.0");
+map.addLayer(polygon_127)
+
+var polygon_128 = new L.RegularPolygonMarker(new L.LatLng(34.6867846, -118.1541632), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.42321214992
+});
+polygon_128._latlng = polygon_128._centerLatLng
+polygon_128.bindPopup("Location: Lancaster, CA; Number of Projects: 1; Amount of Money Raised: 4551.5");
+map.addLayer(polygon_128)
+
+var polygon_129 = new L.RegularPolygonMarker(new L.LatLng(33.9166805, -117.9000604), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.47364497111
+});
+polygon_129._latlng = polygon_129._centerLatLng
+polygon_129.bindPopup("Location: Brea, CA; Number of Projects: 2; Amount of Money Raised: 13012.23");
+map.addLayer(polygon_129)
+
+var polygon_130 = new L.RegularPolygonMarker(new L.LatLng(37.6818745, -121.7680088), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.52261798645
+});
+polygon_130._latlng = polygon_130._centerLatLng
+polygon_130.bindPopup("Location: Livermore, CA; Number of Projects: 2; Amount of Money Raised: 13665.34");
+map.addLayer(polygon_130)
+
+var polygon_131 = new L.RegularPolygonMarker(new L.LatLng(34.0736204, -118.4003563), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.0302563221
+});
+polygon_131._latlng = polygon_131._centerLatLng
+polygon_131.bindPopup("Location: Beverly Hills, CA; Number of Projects: 2; Amount of Money Raised: 8352.0");
+map.addLayer(polygon_131)
+
+var polygon_132 = new L.RegularPolygonMarker(new L.LatLng(34.4437599, -116.9676823), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.64898467956
+});
+polygon_132._latlng = polygon_132._centerLatLng
+polygon_132.bindPopup("Location: Lucerne Valley, CA; Number of Projects: 1; Amount of Money Raised: 772.0");
+map.addLayer(polygon_132)
+
+var polygon_133 = new L.RegularPolygonMarker(new L.LatLng(33.961124, -116.5016784), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.73657262006
+});
+polygon_133._latlng = polygon_133._centerLatLng
+polygon_133.bindPopup("Location: Desert Hot Springs, CA; Number of Projects: 2; Amount of Money Raised: 310.0");
+map.addLayer(polygon_133)
+
+var polygon_134 = new L.RegularPolygonMarker(new L.LatLng(37.8771476, -122.1796888), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.9093205127
+});
+polygon_134._latlng = polygon_134._centerLatLng
+polygon_134.bindPopup("Location: Orinda, CA; Number of Projects: 1; Amount of Money Raised: 20117.0");
+map.addLayer(polygon_134)
+
+var polygon_135 = new L.RegularPolygonMarker(new L.LatLng(34.4208305, -119.6981901), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 13,
+    rotation: 0,
+    radius: 11.597086543
+});
+polygon_135._latlng = polygon_135._centerLatLng
+polygon_135.bindPopup("Location: Santa Barbara, CA; Number of Projects: 13; Amount of Money Raised: 108780.41");
+map.addLayer(polygon_135)
+
+var polygon_136 = new L.RegularPolygonMarker(new L.LatLng(36.9741171, -122.0307963), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 12,
+    rotation: 0,
+    radius: 13.1092522816
+});
+polygon_136._latlng = polygon_136._centerLatLng
+polygon_136.bindPopup("Location: Santa Cruz, CA; Number of Projects: 12; Amount of Money Raised: 493487.24");
+map.addLayer(polygon_136)
+
+var polygon_137 = new L.RegularPolygonMarker(new L.LatLng(39.1457253, -121.5913547), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.82043955541
+});
+polygon_137._latlng = polygon_137._centerLatLng
+polygon_137.bindPopup("Location: Marysville, CA; Number of Projects: 1; Amount of Money Raised: 2491.0");
+map.addLayer(polygon_137)
+
+var polygon_138 = new L.RegularPolygonMarker(new L.LatLng(35.2827524, -120.6596156), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 11.6022806773
+});
+polygon_138._latlng = polygon_138._centerLatLng
+polygon_138.bindPopup("Location: San Luis Obispo, CA; Number of Projects: 2; Amount of Money Raised: 109346.9");
+map.addLayer(polygon_138)
+
+var polygon_139 = new L.RegularPolygonMarker(new L.LatLng(37.7360396, -120.9354895), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.09807450689
+});
+polygon_139._latlng = polygon_139._centerLatLng
+polygon_139.bindPopup("Location: Riverbank, CA; Number of Projects: 1; Amount of Money Raised: 445.0");
+map.addLayer(polygon_139)
+
+var polygon_140 = new L.RegularPolygonMarker(new L.LatLng(41.4568065, -122.8947551), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.6530859549
+});
+polygon_140._latlng = polygon_140._centerLatLng
+polygon_140.bindPopup("Location: Etna, CA; Number of Projects: 1; Amount of Money Raised: 42323.0");
+map.addLayer(polygon_140)
+
+var polygon_141 = new L.RegularPolygonMarker(new L.LatLng(34.0852868, -117.9608978), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 0.69319717931
+});
+polygon_141._latlng = polygon_141._centerLatLng
+polygon_141.bindPopup("Location: Baldwin Park, CA; Number of Projects: 1; Amount of Money Raised: 2.0");
+map.addLayer(polygon_141)
+
+var polygon_142 = new L.RegularPolygonMarker(new L.LatLng(37.1229997, -120.2601754), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.84587998165
+});
+polygon_142._latlng = polygon_142._centerLatLng
+polygon_142.bindPopup("Location: Chowchilla, CA; Number of Projects: 1; Amount of Money Raised: 940.0");
+map.addLayer(polygon_142)
+
+var polygon_143 = new L.RegularPolygonMarker(new L.LatLng(33.7700504, -118.1937395), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 8,
+    rotation: 0,
+    radius: 10.3057140921
+});
+polygon_143._latlng = polygon_143._centerLatLng
+polygon_143.bindPopup("Location: Long Beach, CA; Number of Projects: 8; Amount of Money Raised: 29903.0");
+map.addLayer(polygon_143)
+
+var polygon_144 = new L.RegularPolygonMarker(new L.LatLng(37.7974273, -121.2160526), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.13651828138
+});
+polygon_144._latlng = polygon_144._centerLatLng
+polygon_144.bindPopup("Location: Manteca, CA; Number of Projects: 1; Amount of Money Raised: 3417.0");
+map.addLayer(polygon_144)
+
+var polygon_145 = new L.RegularPolygonMarker(new L.LatLng(33.7877944, -117.8531119), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 7,
+    rotation: 0,
+    radius: 11.3111975788
+});
+polygon_145._latlng = polygon_145._centerLatLng
+polygon_145.bindPopup("Location: Orange, CA; Number of Projects: 7; Amount of Money Raised: 81731.73");
+map.addLayer(polygon_145)
+
+var polygon_146 = new L.RegularPolygonMarker(new L.LatLng(33.6411316, -117.9186689), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 6,
+    rotation: 0,
+    radius: 10.1598724415
+});
+polygon_146._latlng = polygon_146._centerLatLng
+polygon_146.bindPopup("Location: Costa Mesa, CA; Number of Projects: 6; Amount of Money Raised: 25845.0");
+map.addLayer(polygon_146)
+
+var polygon_147 = new L.RegularPolygonMarker(new L.LatLng(34.0194543, -118.4911912), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 15,
+    rotation: 0,
+    radius: 11.7261156462
+});
+polygon_147._latlng = polygon_147._centerLatLng
+polygon_147.bindPopup("Location: Santa Monica, CA; Number of Projects: 15; Amount of Money Raised: 123762.0");
+map.addLayer(polygon_147)
+
+var polygon_148 = new L.RegularPolygonMarker(new L.LatLng(38.891565, -121.2930079), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.6737578005
+});
+polygon_148._latlng = polygon_148._centerLatLng
+polygon_148.bindPopup("Location: Lincoln, CA; Number of Projects: 2; Amount of Money Raised: 43207.0");
+map.addLayer(polygon_148)
+
+var polygon_149 = new L.RegularPolygonMarker(new L.LatLng(40.8665166, -124.0828396), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.6315722504
+});
+polygon_149._latlng = polygon_149._centerLatLng
+polygon_149.bindPopup("Location: Arcata, CA; Number of Projects: 2; Amount of Money Raised: 41422.2");
+map.addLayer(polygon_149)
+
+var polygon_150 = new L.RegularPolygonMarker(new L.LatLng(33.6469661, -117.689218), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.88833453825
+});
+polygon_150._latlng = polygon_150._centerLatLng
+polygon_150.bindPopup("Location: Lake Forest, CA; Number of Projects: 1; Amount of Money Raised: 2666.0");
+map.addLayer(polygon_150)
+
+var polygon_151 = new L.RegularPolygonMarker(new L.LatLng(34.1975048, -119.1770516), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.41737287823
+});
+polygon_151._latlng = polygon_151._centerLatLng
+polygon_151.bindPopup("Location: Oxnard, CA; Number of Projects: 3; Amount of Money Raised: 4525.0");
+map.addLayer(polygon_151)
+
+var polygon_152 = new L.RegularPolygonMarker(new L.LatLng(39.3076744, -123.7994591), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.71931739185
+});
+polygon_152._latlng = polygon_152._centerLatLng
+polygon_152.bindPopup("Location: Mendocino, CA; Number of Projects: 1; Amount of Money Raised: 6120.0");
+map.addLayer(polygon_152)
+
+var polygon_153 = new L.RegularPolygonMarker(new L.LatLng(34.0259216, -118.7797571), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.68461185267
+});
+polygon_153._latlng = polygon_153._centerLatLng
+polygon_153.bindPopup("Location: Malibu, CA; Number of Projects: 1; Amount of Money Raised: 800.0");
+map.addLayer(polygon_153)
+
+var polygon_154 = new L.RegularPolygonMarker(new L.LatLng(38.5890723, -121.302728), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 11.2530597079
+});
+polygon_154._latlng = polygon_154._centerLatLng
+polygon_154.bindPopup("Location: Rancho Cordova, CA; Number of Projects: 3; Amount of Money Raised: 77115.51");
+map.addLayer(polygon_154)
+
+var polygon_155 = new L.RegularPolygonMarker(new L.LatLng(33.8847361, -118.4109089), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.85399312604
+});
+polygon_155._latlng = polygon_155._centerLatLng
+polygon_155.bindPopup("Location: Manhattan Beach, CA; Number of Projects: 1; Amount of Money Raised: 2576.0");
+map.addLayer(polygon_155)
+
+var polygon_156 = new L.RegularPolygonMarker(new L.LatLng(38.3565773, -121.9877444), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.69035979216
+});
+polygon_156._latlng = polygon_156._centerLatLng
+polygon_156.bindPopup("Location: Vacaville, CA; Number of Projects: 2; Amount of Money Raised: 296.0");
+map.addLayer(polygon_156)
+
+var polygon_157 = new L.RegularPolygonMarker(new L.LatLng(37.4323341, -121.8995741), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.99301521476
+});
+polygon_157._latlng = polygon_157._centerLatLng
+polygon_157.bindPopup("Location: Milpitas, CA; Number of Projects: 1; Amount of Money Raised: 1089.0");
+map.addLayer(polygon_157)
+
+var polygon_158 = new L.RegularPolygonMarker(new L.LatLng(39.2190608, -121.0610606), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.49882555443
+});
+polygon_158._latlng = polygon_158._centerLatLng
+polygon_158.bindPopup("Location: Grass Valley, CA; Number of Projects: 2; Amount of Money Raised: 4909.0");
+map.addLayer(polygon_158)
+
+var polygon_159 = new L.RegularPolygonMarker(new L.LatLng(38.1040864, -122.2566367), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.67368817576
+});
+polygon_159._latlng = polygon_159._centerLatLng
+polygon_159.bindPopup("Location: Vallejo, CA; Number of Projects: 3; Amount of Money Raised: 2151.0");
+map.addLayer(polygon_159)
+
+var polygon_160 = new L.RegularPolygonMarker(new L.LatLng(34.1066756, -117.8067257), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.33086363732
+});
+polygon_160._latlng = polygon_160._centerLatLng
+polygon_160.bindPopup("Location: San Dimas, CA; Number of Projects: 1; Amount of Money Raised: 4150.0");
+map.addLayer(polygon_160)
+
+var polygon_161 = new L.RegularPolygonMarker(new L.LatLng(37.4852152, -122.2363548), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 11.0149502548
+});
+polygon_161._latlng = polygon_161._centerLatLng
+polygon_161.bindPopup("Location: Redwood City, CA; Number of Projects: 4; Amount of Money Raised: 60776.0");
+map.addLayer(polygon_161)
+
+var polygon_162 = new L.RegularPolygonMarker(new L.LatLng(36.8252277, -119.7029194), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 2.30259509294
+});
+polygon_162._latlng = polygon_162._centerLatLng
+polygon_162.bindPopup("Location: Clovis, CA; Number of Projects: 1; Amount of Money Raised: 10.0");
+map.addLayer(polygon_162)
+
+var polygon_163 = new L.RegularPolygonMarker(new L.LatLng(37.7249296, -122.1560768), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.85646208986
+});
+polygon_163._latlng = polygon_163._centerLatLng
+polygon_163.bindPopup("Location: San Leandro, CA; Number of Projects: 1; Amount of Money Raised: 950.0");
+map.addLayer(polygon_163)
+
+var polygon_164 = new L.RegularPolygonMarker(new L.LatLng(36.8524545, -121.4016021), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.50315923599
+});
+polygon_164._latlng = polygon_164._centerLatLng
+polygon_164.bindPopup("Location: Hollister, CA; Number of Projects: 2; Amount of Money Raised: 13402.0");
+map.addLayer(polygon_164)
+
+var polygon_165 = new L.RegularPolygonMarker(new L.LatLng(34.5958201, -120.1376481), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.14995323258
+});
+polygon_165._latlng = polygon_165._centerLatLng
+polygon_165.bindPopup("Location: Solvang, CA; Number of Projects: 1; Amount of Money Raised: 9414.0");
+map.addLayer(polygon_165)
+
+var polygon_166 = new L.RegularPolygonMarker(new L.LatLng(33.7458511, -117.826166), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.61219899118
+});
+polygon_166._latlng = polygon_166._centerLatLng
+polygon_166.bindPopup("Location: Tustin, CA; Number of Projects: 3; Amount of Money Raised: 14946.0");
+map.addLayer(polygon_166)
+
+var polygon_167 = new L.RegularPolygonMarker(new L.LatLng(39.1501709, -123.2077831), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 3.80666471199
+});
+polygon_167._latlng = polygon_167._centerLatLng
+polygon_167.bindPopup("Location: Ukiah, CA; Number of Projects: 1; Amount of Money Raised: 45.0");
+map.addLayer(polygon_167)
+
+var polygon_168 = new L.RegularPolygonMarker(new L.LatLng(37.9100783, -122.0651819), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.60517118599
+});
+polygon_168._latlng = polygon_168._centerLatLng
+polygon_168.bindPopup("Location: Walnut Creek, CA; Number of Projects: 2; Amount of Money Raised: 100.0");
+map.addLayer(polygon_168)
+
+var polygon_169 = new L.RegularPolygonMarker(new L.LatLng(38.9779531, -122.8394375), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.34749021884
+});
+polygon_169._latlng = polygon_169._centerLatLng
+polygon_169.bindPopup("Location: Kelseyville, CA; Number of Projects: 2; Amount of Money Raised: 11470.0");
+map.addLayer(polygon_169)
+
+var polygon_170 = new L.RegularPolygonMarker(new L.LatLng(34.0966764, -117.7197785), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.07436142654
+});
+polygon_170._latlng = polygon_170._centerLatLng
+polygon_170.bindPopup("Location: Claremont, CA; Number of Projects: 2; Amount of Money Raised: 8728.61");
+map.addLayer(polygon_170)
+
+var polygon_171 = new L.RegularPolygonMarker(new L.LatLng(33.8352932, -117.9145036), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 10.3985648224
+});
+polygon_171._latlng = polygon_171._centerLatLng
+polygon_171.bindPopup("Location: Anaheim, CA; Number of Projects: 4; Amount of Money Raised: 32812.5");
+map.addLayer(polygon_171)
+
+var polygon_172 = new L.RegularPolygonMarker(new L.LatLng(33.8622366, -118.3995194), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 12.8503832224
+});
+polygon_172._latlng = polygon_172._centerLatLng
+polygon_172.bindPopup("Location: Hermosa Beach, CA; Number of Projects: 2; Amount of Money Raised: 380934.69");
+map.addLayer(polygon_172)
+
+var polygon_173 = new L.RegularPolygonMarker(new L.LatLng(38.2493581, -122.0399663), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: -9.21034037198
+});
+polygon_173._latlng = polygon_173._centerLatLng
+polygon_173.bindPopup("Location: Fairfield, CA; Number of Projects: 1; Amount of Money Raised: 0.0");
+map.addLayer(polygon_173)
+
+var polygon_174 = new L.RegularPolygonMarker(new L.LatLng(33.9294606, -116.977248), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 3.91202500543
+});
+polygon_174._latlng = polygon_174._centerLatLng
+polygon_174.bindPopup("Location: Beaumont, CA; Number of Projects: 1; Amount of Money Raised: 50.0");
+map.addLayer(polygon_174)
+
+var polygon_175 = new L.RegularPolygonMarker(new L.LatLng(37.4418834, -122.1430195), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 8,
+    rotation: 0,
+    radius: 13.5558488105
+});
+polygon_175._latlng = polygon_175._centerLatLng
+polygon_175.bindPopup("Location: Palo Alto, CA; Number of Projects: 8; Amount of Money Raised: 771312.44");
+map.addLayer(polygon_175)
+
+var polygon_176 = new L.RegularPolygonMarker(new L.LatLng(33.4269728, -117.6119925), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.7539589455
+});
+polygon_176._latlng = polygon_176._centerLatLng
+polygon_176.bindPopup("Location: San Clemente, CA; Number of Projects: 2; Amount of Money Raised: 46815.0");
+map.addLayer(polygon_176)
+
+var polygon_177 = new L.RegularPolygonMarker(new L.LatLng(37.6138253, -122.4869194), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: -9.21034037198
+});
+polygon_177._latlng = polygon_177._centerLatLng
+polygon_177.bindPopup("Location: Pacifica, CA; Number of Projects: 1; Amount of Money Raised: 0.0");
+map.addLayer(polygon_177)
+
+var polygon_178 = new L.RegularPolygonMarker(new L.LatLng(37.9735346, -122.5310874), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10.3595580049
+});
+polygon_178._latlng = polygon_178._centerLatLng
+polygon_178.bindPopup("Location: San Rafael, CA; Number of Projects: 3; Amount of Money Raised: 31557.23");
+map.addLayer(polygon_178)
+
+var polygon_179 = new L.RegularPolygonMarker(new L.LatLng(38.2554729, -120.3510307), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.68017295031
+});
+polygon_179._latlng = polygon_179._centerLatLng
+polygon_179.bindPopup("Location: Arnold, CA; Number of Projects: 1; Amount of Money Raised: 293.0");
+map.addLayer(polygon_179)
+
+var polygon_180 = new L.RegularPolygonMarker(new L.LatLng(33.6839473, -117.7946942), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 14,
+    rotation: 0,
+    radius: 12.2206642193
+});
+polygon_180._latlng = polygon_180._centerLatLng
+polygon_180.bindPopup("Location: Irvine, CA; Number of Projects: 14; Amount of Money Raised: 202939.71");
+map.addLayer(polygon_180)
+
+var polygon_181 = new L.RegularPolygonMarker(new L.LatLng(37.6390972, -120.9968782), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 5.4467378027
+});
+polygon_181._latlng = polygon_181._centerLatLng
+polygon_181.bindPopup("Location: Modesto, CA; Number of Projects: 1; Amount of Money Raised: 232.0");
+map.addLayer(polygon_181)
+
+var polygon_182 = new L.RegularPolygonMarker(new L.LatLng(34.0552267, -117.7523048), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 2.77259497222
+});
+polygon_182._latlng = polygon_182._centerLatLng
+polygon_182.bindPopup("Location: Pomona, CA; Number of Projects: 1; Amount of Money Raised: 16.0");
+map.addLayer(polygon_182)
+
+var polygon_183 = new L.RegularPolygonMarker(new L.LatLng(32.9398273, -117.2029363), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 2.48491498309
+});
+polygon_183._latlng = polygon_183._centerLatLng
+polygon_183.bindPopup("Location: Carmel Valley, CA; Number of Projects: 1; Amount of Money Raised: 12.0");
+map.addLayer(polygon_183)
+
+var polygon_184 = new L.RegularPolygonMarker(new L.LatLng(33.660297, -117.9992265), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 11.3055227503
+});
+polygon_184._latlng = polygon_184._centerLatLng
+polygon_184.bindPopup("Location: Huntington Beach, CA; Number of Projects: 4; Amount of Money Raised: 81269.23");
+map.addLayer(polygon_184)
+
+var polygon_185 = new L.RegularPolygonMarker(new L.LatLng(33.9319578, -117.9461734), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.54914913763
+});
+polygon_185._latlng = polygon_185._centerLatLng
+polygon_185.bindPopup("Location: La Habra, CA; Number of Projects: 1; Amount of Money Raised: 5162.36");
+map.addLayer(polygon_185)
+
+var polygon_186 = new L.RegularPolygonMarker(new L.LatLng(37.931868, -121.6957863), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.12713599795
+});
+polygon_186._latlng = polygon_186._centerLatLng
+polygon_186.bindPopup("Location: Brentwood, CA; Number of Projects: 1; Amount of Money Raised: 62.0");
+map.addLayer(polygon_186)
+
+var polygon_187 = new L.RegularPolygonMarker(new L.LatLng(38.6104658, -122.8691609), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.51051904316
+});
+polygon_187._latlng = polygon_187._centerLatLng
+polygon_187.bindPopup("Location: Healdsburg, CA; Number of Projects: 2; Amount of Money Raised: 13501.0");
+map.addLayer(polygon_187)
+
+var polygon_188 = new L.RegularPolygonMarker(new L.LatLng(37.3852183, -122.1141298), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.26917516713
+});
+polygon_188._latlng = polygon_188._centerLatLng
+polygon_188.bindPopup("Location: Los Altos, CA; Number of Projects: 1; Amount of Money Raised: 10606.0");
+map.addLayer(polygon_188)
+
+var polygon_189 = new L.RegularPolygonMarker(new L.LatLng(33.0369867, -117.2919818), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.51479981498
+});
+polygon_189._latlng = polygon_189._centerLatLng
+polygon_189.bindPopup("Location: Encinitas, CA; Number of Projects: 1; Amount of Money Raised: 1835.0");
+map.addLayer(polygon_189)
+
+var polygon_190 = new L.RegularPolygonMarker(new L.LatLng(38.1374202, -120.4596437), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.02102359207
+});
+polygon_190._latlng = polygon_190._centerLatLng
+polygon_190.bindPopup("Location: Murphys, CA; Number of Projects: 1; Amount of Money Raised: 412.0");
+map.addLayer(polygon_190)
+
+var polygon_191 = new L.RegularPolygonMarker(new L.LatLng(38.232417, -122.6366524), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.18255800125
+});
+polygon_191._latlng = polygon_191._centerLatLng
+polygon_191.bindPopup("Location: Petaluma, CA; Number of Projects: 2; Amount of Money Raised: 9726.0");
+map.addLayer(polygon_191)
+
+var polygon_192 = new L.RegularPolygonMarker(new L.LatLng(37.9357576, -122.3477486), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.57228268255
+});
+polygon_192._latlng = polygon_192._centerLatLng
+polygon_192.bindPopup("Location: Richmond, CA; Number of Projects: 2; Amount of Money Raised: 715.0");
+map.addLayer(polygon_192)
+
+var polygon_193 = new L.RegularPolygonMarker(new L.LatLng(38.1341477, -121.2722194), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.91998165575
+});
+polygon_193._latlng = polygon_193._centerLatLng
+polygon_193.bindPopup("Location: Lodi, CA; Number of Projects: 1; Amount of Money Raised: 137.0");
+map.addLayer(polygon_193)
+
+var polygon_194 = new L.RegularPolygonMarker(new L.LatLng(37.3477174, -120.609084), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 7.82404605086
+});
+polygon_194._latlng = polygon_194._centerLatLng
+polygon_194.bindPopup("Location: Atwater, CA; Number of Projects: 1; Amount of Money Raised: 2500.0");
+map.addLayer(polygon_194)
+
+var polygon_195 = new L.RegularPolygonMarker(new L.LatLng(38.4404674, -122.7144314), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 6,
+    rotation: 0,
+    radius: 9.06946782461
+});
+polygon_195._latlng = polygon_195._centerLatLng
+polygon_195.bindPopup("Location: Santa Rosa, CA; Number of Projects: 6; Amount of Money Raised: 8686.0");
+map.addLayer(polygon_195)
+
+var polygon_196 = new L.RegularPolygonMarker(new L.LatLng(32.6400541, -117.0841955), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.34738938479
+});
+polygon_196._latlng = polygon_196._centerLatLng
+polygon_196.bindPopup("Location: Chula Vista, CA; Number of Projects: 2; Amount of Money Raised: 571.0");
+map.addLayer(polygon_196)
+
+var polygon_197 = new L.RegularPolygonMarker(new L.LatLng(34.0900091, -118.3617443), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.38160098984
+});
+polygon_197._latlng = polygon_197._centerLatLng
+polygon_197.bindPopup("Location: West Hollywood, CA; Number of Projects: 3; Amount of Money Raised: 11868.0");
+map.addLayer(polygon_197)
+
+var polygon_198 = new L.RegularPolygonMarker(new L.LatLng(33.4936391, -117.1483648), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.59030118556
+});
+polygon_198._latlng = polygon_198._centerLatLng
+polygon_198.bindPopup("Location: Temecula, CA; Number of Projects: 3; Amount of Money Raised: 728.0");
+map.addLayer(polygon_198)
+
+var polygon_199 = new L.RegularPolygonMarker(new L.LatLng(33.1433723, -117.1661449), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.25626931342
+});
+polygon_199._latlng = polygon_199._centerLatLng
+polygon_199.bindPopup("Location: San Marcos, CA; Number of Projects: 2; Amount of Money Raised: 10470.0");
+map.addLayer(polygon_199)
+
+var polygon_200 = new L.RegularPolygonMarker(new L.LatLng(35.6224561, -117.6708966), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.52773742508
+});
+polygon_200._latlng = polygon_200._centerLatLng
+polygon_200.bindPopup("Location: Ridgecrest, CA; Number of Projects: 1; Amount of Money Raised: 5053.0");
+map.addLayer(polygon_200)
+
+var polygon_201 = new L.RegularPolygonMarker(new L.LatLng(33.5225261, -117.7075526), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 8.84029068357
+});
+polygon_201._latlng = polygon_201._centerLatLng
+polygon_201.bindPopup("Location: Laguna Niguel, CA; Number of Projects: 1; Amount of Money Raised: 6907.0");
+map.addLayer(polygon_201)
+
+var polygon_202 = new L.RegularPolygonMarker(new L.LatLng(33.9533487, -117.3961564), {
+    color: 'blue',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'blue',
+    fillOpacity: 1,
+    numberOfSides: 5,
+    rotation: 0,
+    radius: 7.85806092811
+});
+polygon_202._latlng = polygon_202._centerLatLng
+polygon_202.bindPopup("Location: Riverside, CA; Number of Projects: 5; Amount of Money Raised: 2586.5");
+map.addLayer(polygon_202)
+
+var polygon_203 = new L.RegularPolygonMarker(new L.LatLng(33.8886259, -117.8131125), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 11.1889251312
+});
+polygon_203._latlng = polygon_203._centerLatLng
+polygon_203.bindPopup("Location: Yorba Linda, CA; Number of Projects: 2; Amount of Money Raised: 72325.0");
+map.addLayer(polygon_203)
+
+var polygon_204 = new L.RegularPolygonMarker(new L.LatLng(34.1336186, -117.9075627), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 9.28822691988
+});
+polygon_204._latlng = polygon_204._centerLatLng
+polygon_204.bindPopup("Location: Azusa, CA; Number of Projects: 1; Amount of Money Raised: 10810.0");
+map.addLayer(polygon_204)
+
+var polygon_205 = new L.RegularPolygonMarker(new L.LatLng(34.1064001, -117.3703235), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 4.45434845904
+});
+polygon_205._latlng = polygon_205._centerLatLng
+polygon_205.bindPopup("Location: Rialto, CA; Number of Projects: 2; Amount of Money Raised: 86.0");
+map.addLayer(polygon_205)
+
+var polygon_206 = new L.RegularPolygonMarker(new L.LatLng(34.9530337, -120.4357191), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.49526570699
+});
+polygon_206._latlng = polygon_206._centerLatLng
+polygon_206.bindPopup("Location: Santa Maria, CA; Number of Projects: 2; Amount of Money Raised: 662.0");
+map.addLayer(polygon_206)
+
+var polygon_207 = new L.RegularPolygonMarker(new L.LatLng(37.5933918, -122.0438298), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 1.09864562145
+});
+polygon_207._latlng = polygon_207._centerLatLng
+polygon_207.bindPopup("Location: Union City, CA; Number of Projects: 1; Amount of Money Raised: 3.0");
+map.addLayer(polygon_207)
+
+var polygon_208 = new L.RegularPolygonMarker(new L.LatLng(34.4480495, -119.242889), {
+    color: 'red',
+    opacity: 1,
+    weight: 2,
+    fillColor: 'red',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 6.84054663624
+});
+polygon_208._latlng = polygon_208._centerLatLng
+polygon_208.bindPopup("Location: Ojai, CA; Number of Projects: 1; Amount of Money Raised: 935.0");
+map.addLayer(polygon_208)
+
+
+
+
+
+
+</script>
+
+</body>

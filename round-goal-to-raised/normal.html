@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+<head>
+
+	<script type="text/javascript" src="../d3/d3.min.js"></script>
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+// Canvas	
+var w = 800;
+var h = 650;
+var svg = d3.select("body").append("svg")
+			.attr("width", w)
+			.attr("height", w);
+var container = svg.append("g").attr("transform", "translate(" + w/2 + "," + h/2 + ")");
+
+//
+var projectsData;
+
+// Boundry circles
+var circlesData = [100,200,300];
+var circleColorScale = d3.scale.ordinal().domain(circlesData).range(["red","green","blue"]);
+
+// Chart legend
+var legendW = 135;
+var legendH = 85;
+var legendPadFromSVG = 15;
+var legendPadBetweenItems = 10;
+
+var legendData = ["< 100%","100% - 200%","> 200%"];
+var legendYScale = d3.scale.ordinal().domain(d3.range(legendData.length)).rangeBands([0,legendH], 0);
+var legend = svg.append("g").attr("transform", "translate(" + (w-legendW) + "," + 0 + ")");
+
+var rectWH = 15;
+legendGroup = legend.selectAll("g").data(legendData).enter().append("g").each(function(d,i){
+					d3.select(this).append("rect")
+					.attr("x",legendW-legendPadFromSVG-rectWH)
+					.attr("y",legendYScale(i))
+					.attr("width",rectWH)
+					.attr("height",rectWH)
+					.attr("fill",circleColorScale(i));
+					d3.select(this).append("text")
+					.attr("x",0)
+					.attr("y",legendYScale(i)+15)
+					.text(d);
+				});
+// Tip
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<strong>Goal:</strong> <span style='color:red'>" + d.Goal + "</span>, <strong>Raised:</strong> <span style='color:red'>" + d.Raised + "</span>";
+  })
+
+svg.call(tip);
+
+// Pointer
+var pointerRadius = d3.max(circlesData);
+var pointerData = JSON.parse('[{"x":'+pointerRadius+',"y":0}]');
+
+
+// Draw boundry circles
+container.selectAll("circle").data(circlesData)
+			.enter()
+			.append("circle")
+			.attr({
+				cx:0,
+				cy:0,
+				"fill-opacity":0,
+				r:function(d){return d;},
+				stroke:function(d){return circleColorScale(d);},
+				"stroke-width":2
+			});
+
+var drag = d3.behavior.drag()
+			.origin(function(d,i) {return d;})
+			.on("dragstart", dragstarted)
+			.on("drag", dragged)
+			.on("dragend", dragended);
+
+
+/*var pointer = container.append("g")
+	  .attr("class", "pointer")
+	.selectAll("g")
+	  .data(pointerData)
+	.enter().append("circle")
+		.attr("r", 10)
+		.attr("cx", function(d) { return d.x; })
+		.attr("cy", function(d) { return d.y; })
+		.attr("fill","green")
+		.attr("fill-opacity","0")
+		.attr("stroke","black")
+		.attr("stroke-width",5)
+		.call(drag);*/
+
+// Function for drag
+function dragstarted(d) {
+  d3.event.sourceEvent.stopPropagation();
+  d3.select(this).classed("dragging", true);
+}
+
+function dragged(d) {
+
+	dist = Math.sqrt(Math.pow(d3.event.x,2)+Math.pow(d3.event.y,2));
+	theta = Math.atan2(d3.event.y,d3.event.x);
+
+	if(d3.event.y<0){
+		theta = 2*Math.PI+theta
+	}
+	//console.log(theta+"\tx: "+d3.event.x+"\ty: "+d3.event.y);
+  d3.select(this)
+	.attr("cx", d.x = Math.cos(theta)*pointerRadius)
+	.attr("cy", d.y = Math.sin(theta)*pointerRadius);
+	var selectedProject = null;
+	//console.log(Math.round(theta*100));
+	for (var i = projectsData.length - 1; i >= 0; i--) {
+		if(Math.round(theta*100)===projectsData[i].Angle){
+			//console.log(projectsData[i]);
+			selectedProject = projectsData[i];
+		}
+	};
+	if (selectedProject) {
+		//console.log(tip.show);
+		//tip.show(d,pointer);
+	};
+}
+
+function dragended(d) {
+  d3.select(this).classed("dragging", false);
+}
+
+
+
+
+d3.json("data3.json", function(json) {
+	projectsData = json;
+
+	var theta = 360/projectsData.length;
+	var thetaScale = d3.scale.ordinal().domain(d3.range(projectsData.length)).rangeBands([0, 2*Math.PI], 0, 0);
+
+	container.selectAll("g.project").data(projectsData).enter()
+				.append("g")
+				.each(function(d, i) {
+					d3.select(this).append("polygon")
+									.attr("points",function() { 
+										p = Math.round(d.Raised)/Math.round(d.Goal)*100;
+										p = p>300?300:p;
+										point0 = "0,0"
+										d.Angle = Math.round(thetaScale(i)*100);
+
+										point1 = (Math.cos(thetaScale(i))*p)+","+(Math.sin(thetaScale(i))*p);
+										if(i+1==projectsData.length){
+											point2 = (Math.cos(Math.PI*2)*p)+","+(Math.sin(Math.PI*2)*p);
+										}else{
+											point2 = (Math.cos(thetaScale(i+1))*p)+","+(Math.sin(thetaScale(i+1))*p);
+										}
+										return point0+" "+point1+" "+point2;
+									})
+									.attr("fill",function(d){
+										p = d.Raised/d.Goal*100;
+										if(p<100){
+											return "red";
+										}
+										if(p<200 && p>=100){
+											return "green";
+										}
+										if(p>=200){
+											return "blue";
+										}
+										//return "black";
+									})
+									.attr("fill-opacity","1")
+									.attr("stroke-width",0)
+									.on("mouseover", function(d) {
+										tip.show(d)
+										//console.log(d);
+									})
+									/*.append("title")
+									   .text(function(d) {
+											 return "G:"+d.Goal+" , R:"+d.Raised;
+									   })*/;
+				});//each
+});//json
+
+
+
+</script>
+</body>
+</html>
